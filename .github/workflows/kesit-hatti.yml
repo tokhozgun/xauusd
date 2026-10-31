@@ -1,0 +1,62 @@
+name: kesit-hatti
+
+# İş dosyası (kesit-hatti/isler/is.json) kesit-hatti dalına push edilince çalışır.
+# Kaynağı GitHub sunucusunda indirir, kesitleri üretir ve çıktıyı aynı dala geri yazar.
+on:
+  push:
+    branches: [kesit-hatti]
+    paths: ["kesit-hatti/isler/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kesit-hatti
+  cancel-in-progress: false
+
+jobs:
+  uret:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Araçlar
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-inter fonts-dejavu-core >/dev/null
+          pip install -q yt-dlp faster-whisper
+
+      - name: İş bilgisi
+        id: is
+        run: |
+          echo "ad=$(jq -r '.ad // "is"' kesit-hatti/isler/is.json)" >> "$GITHUB_OUTPUT"
+          echo "anahtar=$(jq -r '.kaynak.youtube // .kaynak.yedek_url' kesit-hatti/isler/is.json | sha1sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+
+      - name: Kaynak önbelleği
+        uses: actions/cache@v4
+        with:
+          path: kaynak.mp4
+          key: kaynak-${{ steps.is.outputs.anahtar }}
+
+      - name: Model önbelleği
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-${{ hashFiles('kesit-hatti/isler/is.json') }}
+          restore-keys: whisper-
+
+      - name: Kesitleri üret
+        env:
+          KAYNAK_YOLU: kaynak.mp4
+        run: python kesit-hatti/hat.py kesit-hatti/isler/is.json --cikti "kesit-hatti/cikti/${{ steps.is.outputs.ad }}"
+
+      - name: Çıktıyı dala yaz
+        run: |
+          git config user.name "kesit-hatti"
+          git config user.email "kesit-hatti@users.noreply.github.com"
+          git add kesit-hatti/cikti
+          git commit -m "Çıktı: ${{ steps.is.outputs.ad }} (run ${{ github.run_id }})" || echo "Değişiklik yok"
+          git pull --rebase origin kesit-hatti
+          git push origin HEAD:kesit-hatti
