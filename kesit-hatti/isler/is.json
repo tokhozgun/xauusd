@@ -1,5 +1,5 @@
 {
-  "ad": "grup3-krizler-tekrar-ediyor",
+  "ad": "grup4-toparlanma-neden-zor",
   "mod": "kesit",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -130,24 +130,24 @@
   "kesitler": [
     {
       "id": "01",
-      "ad": "enrondan-2008e",
-      "bas": 274.3,
-      "son": 327.5,
-      "srt": "kesit-hatti/isler/srt_grup3/01_enrondan-2008e.srt"
+      "ad": "toparlanma-kolay-olmayabilir",
+      "bas": 429.3,
+      "son": 493.2,
+      "srt": "kesit-hatti/isler/srt_grup4/01_toparlanma-kolay-olmayabilir.srt"
     },
     {
       "id": "02",
-      "ad": "imf-yeni-normal",
-      "bas": 328.0,
-      "son": 382.5,
-      "srt": "kesit-hatti/isler/srt_grup3/02_imf-yeni-normal.srt"
+      "ad": "eski-veri-dediler-2024-2025",
+      "bas": 518.8,
+      "son": 588.5,
+      "srt": "kesit-hatti/isler/srt_grup4/02_eski-veri-dediler-2024-2025.srt"
     },
     {
       "id": "03",
-      "ad": "riskin-erken-tespiti-komitesi",
-      "bas": 382.4,
-      "son": 429.2,
-      "srt": "kesit-hatti/isler/srt_grup3/03_riskin-erken-tespiti-komitesi.srt"
+      "ad": "katlanan-hisse-de-iyi-degil",
+      "bas": 588.7,
+      "son": 622.9,
+      "srt": "kesit-hatti/isler/srt_grup4/03_katlanan-hisse-de-iyi-degil.srt"
     }
   ]
 }
