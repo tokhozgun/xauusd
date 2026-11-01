@@ -281,6 +281,40 @@ def kesit(is_, src: Path, cikti: Path):
     shutil.rmtree(tmp, ignore_errors=True)
 
 
+def transkript(is_, src: Path, cikti: Path):
+    """Tüm yayının kelime zamanlı transkripti (mutlak zaman) + düzen taraması için kareler."""
+    cikti.mkdir(parents=True, exist_ok=True)
+    ay = is_.get("altyazi", {})
+    wav = cikti / "_tam.wav"
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-vn", "-ac", "1", "-ar", "16000", wav])
+    kel = kelimeler_whisper(wav, ay.get("model", "large-v3-turbo"), ay.get("dil", "tr"))
+    wav.unlink()
+    (cikti / "kelimeler.json").write_text(
+        json.dumps([[round(a, 2), round(z, 2), t] for a, z, t in kel], ensure_ascii=False), encoding="utf-8")
+    srt_yaz(parcala(kel), cikti / "transkript.srt")
+    # düzen taraması: her N saniyede küçük kare, tek bir pafta
+    adim = int(is_.get("tarama_adim", 10))
+    d = cikti / "_tarama"
+    d.mkdir(exist_ok=True)
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-vf", f"fps=1/{adim},scale=240:-2", d / "t_%04d.jpg"])
+    from PIL import Image, ImageDraw
+    fs = sorted(d.glob("t_*.jpg"))
+    kol = 8
+    w, h = Image.open(fs[0]).size
+    for p in range(0, len(fs), kol * 8):
+        grup = fs[p:p + kol * 8]
+        satir = (len(grup) + kol - 1) // kol
+        paf = Image.new("RGB", (kol * w, satir * (h + 18)), "white")
+        dr = ImageDraw.Draw(paf)
+        for i, f in enumerate(grup):
+            x, y = (i % kol) * w, (i // kol) * (h + 18)
+            paf.paste(Image.open(f), (x, y + 18))
+            t = (p + i) * adim
+            dr.text((x + 4, y + 3), f"{t // 60}:{t % 60:02d}", fill="black")
+        paf.save(cikti / f"pafta_{p // (kol * 8) + 1}.jpg", quality=80)
+    shutil.rmtree(d, ignore_errors=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("is_dosyasi")
@@ -291,8 +325,11 @@ def main():
     cikti = Path(a.cikti)
     cikti.mkdir(parents=True, exist_ok=True)
     src = kaynak_al(is_, Path(os.environ.get("KAYNAK_YOLU", "kaynak.mp4")), a.kaynak)
-    if is_.get("mod", "kesit") == "kareler":
+    mod = is_.get("mod", "kesit")
+    if mod == "kareler":
         kareler(is_, src, cikti)
+    elif mod == "transkript":
+        transkript(is_, src, cikti)
     else:
         kesit(is_, src, cikti)
 
