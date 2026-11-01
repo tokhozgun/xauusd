@@ -1,5 +1,5 @@
 {
-  "ad": "grup7-kapanis-katma-deger-yok",
+  "ad": "v2",
   "mod": "kesit",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -147,13 +147,224 @@
       "duzen": "guzem_yakin_son"
     }
   ],
-  "kesitler": [
+  "adimlar": [
     {
-      "id": "04",
-      "ad": "yatirimin-ahlaki-burada-basliyor",
-      "bas": 1322.05,
-      "son": 1364.9,
-      "srt": "kesit-hatti/isler/srt_grup7/04_yatirimin-ahlaki-burada-basliyor.srt"
+      "ad": "v2-grup1-acilis-ve-kok-sorun",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "kalite-bozuldu-kok-sorun",
+          "bas": 29.98,
+          "son": 78.66,
+          "srt": "kesit-hatti/isler/srt_v2_grup1/01_kalite-bozuldu-kok-sorun.srt"
+        },
+        {
+          "id": "02",
+          "ad": "117-sirketin-17si-iflas",
+          "bas": 86.34,
+          "son": 121.86,
+          "srt": "kesit-hatti/isler/srt_v2_grup1/02_117-sirketin-17si-iflas.srt"
+        },
+        {
+          "id": "03",
+          "ad": "bu-kadar-denetci-varken",
+          "bas": 122.32,
+          "son": 187.94,
+          "srt": "kesit-hatti/isler/srt_v2_grup1/03_bu-kadar-denetci-varken.srt"
+        }
+      ]
+    },
+    {
+      "ad": "v2-grup2-danisman-kimdir",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "danismanin-dogrusu-yonetim-danismanligi",
+          "bas": 189.42,
+          "son": 218.7,
+          "srt": "kesit-hatti/isler/srt_v2_grup2/01_danismanin-dogrusu-yonetim-danismanligi.srt"
+        },
+        {
+          "id": "02",
+          "ad": "87-kat-artis-basari-degildir",
+          "bas": 226.66,
+          "son": 262.96,
+          "srt": "kesit-hatti/isler/srt_v2_grup2/02_87-kat-artis-basari-degildir.srt"
+        }
+      ]
+    },
+    {
+      "ad": "v2-grup3-krizler-tekrar-ediyor",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "enrondan-2008e",
+          "bas": 276.94,
+          "son": 327.42,
+          "srt": "kesit-hatti/isler/srt_v2_grup3/01_enrondan-2008e.srt"
+        },
+        {
+          "id": "02",
+          "ad": "imf-yeni-normal",
+          "bas": 328.08,
+          "son": 361.0,
+          "srt": "kesit-hatti/isler/srt_v2_grup3/02_imf-yeni-normal.srt"
+        },
+        {
+          "id": "03",
+          "ad": "riskin-erken-tespiti-komitesi",
+          "bas": 388.58,
+          "son": 429.12,
+          "srt": "kesit-hatti/isler/srt_v2_grup3/03_riskin-erken-tespiti-komitesi.srt"
+        }
+      ]
+    },
+    {
+      "ad": "v2-grup4-toparlanma-neden-zor",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "toparlanma-kolay-olmayabilir",
+          "bas": 429.78,
+          "son": 495.4,
+          "srt": "kesit-hatti/isler/srt_v2_grup4/01_toparlanma-kolay-olmayabilir.srt"
+        },
+        {
+          "id": "02",
+          "ad": "eski-veri-dediler-2024-2025",
+          "bas": 518.88,
+          "son": 574.54,
+          "srt": "kesit-hatti/isler/srt_v2_grup4/02_eski-veri-dediler-2024-2025.srt"
+        },
+        {
+          "id": "03",
+          "ad": "katlanan-hisse-de-iyi-degil",
+          "bas": 591.8,
+          "son": 622.74,
+          "srt": "kesit-hatti/isler/srt_v2_grup4/03_katlanan-hisse-de-iyi-degil.srt"
+        }
+      ]
+    },
+    {
+      "ad": "v2-grup5-yatirim-ahlaki-ve-katma-deger",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "yatirim-ahlaki-nasil-bozuldu",
+          "bas": 623.92,
+          "son": 652.04,
+          "srt": "kesit-hatti/isler/srt_v2_grup5/01_yatirim-ahlaki-nasil-bozuldu.srt"
+        },
+        {
+          "id": "02",
+          "ad": "halka-arz-parasi-borca-gidiyor",
+          "bas": 709.16,
+          "son": 775.02,
+          "srt": "kesit-hatti/isler/srt_v2_grup5/02_halka-arz-parasi-borca-gidiyor.srt"
+        },
+        {
+          "id": "03",
+          "ad": "sifir-toplamli-oyun",
+          "bas": 779.88,
+          "son": 833.44,
+          "srt": "kesit-hatti/isler/srt_v2_grup5/03_sifir-toplamli-oyun.srt"
+        },
+        {
+          "id": "04",
+          "ad": "kriz-yonetiminde-iyiyiz-ovuncu",
+          "bas": 846.62,
+          "son": 896.84,
+          "srt": "kesit-hatti/isler/srt_v2_grup5/04_kriz-yonetiminde-iyiyiz-ovuncu.srt"
+        },
+        {
+          "id": "05",
+          "ad": "elinizi-atese-sokarak-deneyim",
+          "bas": 898.28,
+          "son": 943.48,
+          "srt": "kesit-hatti/isler/srt_v2_grup5/05_elinizi-atese-sokarak-deneyim.srt"
+        }
+      ]
+    },
+    {
+      "ad": "v2-grup6-faiz-tuketim-rezerv",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "talep-daraliyor-faiz-inmeli-mi",
+          "bas": 951.38,
+          "son": 1003.66,
+          "srt": "kesit-hatti/isler/srt_v2_grup6/01_talep-daraliyor-faiz-inmeli-mi.srt"
+        },
+        {
+          "id": "02",
+          "ad": "faiz-kanser-hastasina-agri-kesici",
+          "bas": 1018.76,
+          "son": 1058.84,
+          "srt": "kesit-hatti/isler/srt_v2_grup6/02_faiz-kanser-hastasina-agri-kesici.srt"
+        },
+        {
+          "id": "03",
+          "ad": "cay-servisi-anekdotu",
+          "bas": 1061.68,
+          "son": 1099.92,
+          "srt": "kesit-hatti/isler/srt_v2_grup6/03_cay-servisi-anekdotu.srt"
+        },
+        {
+          "id": "04",
+          "ad": "fon-krizi-milyonlarca-kisi",
+          "bas": 1100.66,
+          "son": 1141.66,
+          "srt": "kesit-hatti/isler/srt_v2_grup6/04_fon-krizi-milyonlarca-kisi.srt"
+        },
+        {
+          "id": "05",
+          "ad": "rezerv-hangisini-karsilayacak",
+          "bas": 1147.4,
+          "son": 1192.58,
+          "srt": "kesit-hatti/isler/srt_v2_grup6/05_rezerv-hangisini-karsilayacak.srt"
+        }
+      ]
+    },
+    {
+      "ad": "v2-grup7-kapanis-katma-deger-yok",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "tekel-ve-konkordatodan-once-halka-arz",
+          "bas": 1207.98,
+          "son": 1247.06,
+          "srt": "kesit-hatti/isler/srt_v2_grup7/01_tekel-ve-konkordatodan-once-halka-arz.srt"
+        },
+        {
+          "id": "02",
+          "ad": "fonzede-kara-mizahi",
+          "bas": 1242.62,
+          "son": 1278.14,
+          "srt": "kesit-hatti/isler/srt_v2_grup7/02_fonzede-kara-mizahi.srt"
+        },
+        {
+          "id": "03",
+          "ad": "kuyumcular-kayit-disiyiz",
+          "bas": 1278.14,
+          "son": 1319.24,
+          "srt": "kesit-hatti/isler/srt_v2_grup7/03_kuyumcular-kayit-disiyiz.srt"
+        },
+        {
+          "id": "04",
+          "ad": "yatirimin-ahlaki-burada-basliyor",
+          "bas": 1327.08,
+          "son": 1353.06,
+          "srt": "kesit-hatti/isler/srt_v2_grup7/04_yatirimin-ahlaki-burada-basliyor.srt"
+        }
+      ]
     }
-  ]
+  ],
+  "sessizlige_hizala": true
 }

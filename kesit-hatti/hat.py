@@ -453,8 +453,19 @@ def main():
         for adim in adimlar:
             alt = {**is_, **adim}
             calistir(alt, src, cikti.parent / alt["ad"])
+            if os.environ.get("ARA_GONDER"):
+                ara_gonder(cikti.parent / alt["ad"], alt["ad"])
     else:
         calistir(is_, src, cikti)
+
+
+def ara_gonder(klasor, ad):
+    """Her adım bitince çıktıyı dala yazar; böylece gruplar hazır oldukça alınabilir."""
+    for c in (["git", "add", str(klasor)],
+              ["git", "commit", "-q", "-m", f"Çıktı: {ad} [skip ci]"],
+              ["git", "pull", "-q", "--rebase", "origin", "kesit-hatti"],
+              ["git", "push", "-q", "origin", "HEAD:kesit-hatti"]):
+        subprocess.run(c, check=False)
 
 
 def calistir(is_, src, cikti):

@@ -47,15 +47,19 @@ jobs:
           key: whisper-${{ hashFiles('kesit-hatti/isler/is.json') }}
           restore-keys: whisper-
 
+      - name: Git kimliği
+        run: |
+          git config user.name "kesit-hatti"
+          git config user.email "kesit-hatti@users.noreply.github.com"
+
       - name: Kesitleri üret
         env:
           KAYNAK_YOLU: kaynak.mp4
+          ARA_GONDER: "1"
         run: python kesit-hatti/hat.py kesit-hatti/isler/is.json --cikti "kesit-hatti/cikti/${{ steps.is.outputs.ad }}"
 
       - name: Çıktıyı dala yaz
         run: |
-          git config user.name "kesit-hatti"
-          git config user.email "kesit-hatti@users.noreply.github.com"
           git add kesit-hatti/cikti
           git commit -m "Çıktı: ${{ steps.is.outputs.ad }} (run ${{ github.run_id }})" || echo "Değişiklik yok"
           git pull --rebase origin kesit-hatti

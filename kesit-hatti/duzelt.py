@@ -45,7 +45,11 @@ def main():
     cik.mkdir(parents=True, exist_ok=True)
     kel = uygula(kel, duz)
     for k in kesitler:
-        parca = [w for w in kel if w[0] >= k["bas"] - 0.05 and w[1] <= k["son"] + 0.15]
+        parca = [w for w in kel if w[0] >= k["bas"] - 0.01 and w[1] <= k["son"] + 0.15]
+        if parca:  # kesitin ilk kelimesi büyük harfle başlasın (Türkçe i -> İ)
+            a, z, t = parca[0]
+            ilk = {"i": "İ", "ı": "I"}.get(t[0], t[0].upper())
+            parca[0] = (a, z, ilk + t[1:])
         bloklar = parcala(parca)
         yol = cik / f"{k['id']}_{k['ad']}.srt"
         srt_yaz(bloklar, yol)
