@@ -1,33 +1,10 @@
 {
-  "ad": "grup1-acilis-ve-kok-sorun",
+  "ad": "grup2-danisman-kimdir",
   "mod": "kesit",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
     "yedek_url": "https://storage.googleapis.com/vidiq-user-videos/cfd80361-1f46-462d-a5f4-6425727d9d25/56a3e50a-1c61-4d6e-b656-4917cd4dedaa.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1794083838&Signature=Gft%2Fa5W%2BWxlfw38cMnpqkr%2FvKbpHUTPquCYNfEXIbbyzaVF5iWxKwoWgrvGoBIjH0%2BvKTKbJ%2BW3sFPfq5PUWB2L%2FmqVFdaJJJPgKLcVMlyfOVt%2Fxfbfjm6%2B6ZRvr9CuyOZ5AFZgEBBETvIed3nizQrIOGz83pPZhrZT%2B9m%2Fp1aixMk6BCLL5OauAeBvNbIFQNv37FD4s32%2F26Fm%2F8qr%2FUIc2bnVfic5ZzObY52DLeCV00%2FW0SIsDkBX3K5EK02%2FEipNgwtEWWE%2Bmaa8OLulAxJslxDzTY8f8mEynl7ZDDk18anB6tNjbuPWATlTz6Uh9utT0T5GwBPt99Nsx%2FE39NQ%3D%3D"
   },
-  "kesitler": [
-    {
-      "id": "01",
-      "ad": "kalite-bozuldu-kok-sorun",
-      "bas": 29.2,
-      "son": 78.7,
-      "srt": "kesit-hatti/isler/srt_grup1/01_kalite-bozuldu-kok-sorun.srt"
-    },
-    {
-      "id": "02",
-      "ad": "117-sirketin-17si-iflas",
-      "bas": 78.7,
-      "son": 121.9,
-      "srt": "kesit-hatti/isler/srt_grup1/02_117-sirketin-17si-iflas.srt"
-    },
-    {
-      "id": "03",
-      "ad": "bu-kadar-denetci-varken",
-      "bas": 121.9,
-      "son": 187.9,
-      "srt": "kesit-hatti/isler/srt_grup1/03_bu-kadar-denetci-varken.srt"
-    }
-  ],
   "altyazi": {
     "font": "Inter SemiBold",
     "punto": 52,
@@ -128,6 +105,37 @@
       "bas": 48.52,
       "son": 79.5,
       "duzen": "guzem_yakin_b"
+    }
+  ],
+  "adimlar": [
+    {
+      "ad": "grup2-danisman-kimdir",
+      "mod": "kesit",
+      "kesitler": [
+        {
+          "id": "01",
+          "ad": "danismanin-dogrusu-yonetim-danismanligi",
+          "bas": 189.3,
+          "son": 225.4,
+          "srt": "kesit-hatti/isler/srt_grup2/01_danismanin-dogrusu-yonetim-danismanligi.srt"
+        },
+        {
+          "id": "02",
+          "ad": "87-kat-artis-basari-degildir",
+          "bas": 225.4,
+          "son": 274.3,
+          "srt": "kesit-hatti/isler/srt_grup2/02_87-kat-artis-basari-degildir.srt"
+        }
+      ]
+    },
+    {
+      "ad": "sahne-can-yakin",
+      "mod": "sahne",
+      "sahne_aralik": [
+        280,
+        360
+      ],
+      "sahne_esik": 0.08
     }
   ]
 }

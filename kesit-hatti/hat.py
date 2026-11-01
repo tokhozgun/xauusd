@@ -332,10 +332,12 @@ def sahne(is_, src: Path, cikti: Path):
     """Sahne geçişlerini bulur; her geçişten 0.5 sn sonrası için bir kare çıkarır."""
     cikti.mkdir(parents=True, exist_ok=True)
     esik = float(is_.get("sahne_esik", 0.3))
-    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(src), "-vf",
+    a0, a1 = is_.get("sahne_aralik", [0, None])
+    aralik = ["-ss", str(a0)] + (["-t", str(a1 - a0)] if a1 else [])
+    r = subprocess.run(["ffmpeg", "-hide_banner", *aralik, "-i", str(src), "-vf",
                         f"scale=320:-2,select='gt(scene,{esik})',showinfo", "-an", "-f", "null", "-"],
                        capture_output=True, text=True)
-    zamanlar = [float(m) for m in re.findall(r"pts_time:([0-9.]+)", r.stderr)]
+    zamanlar = [float(m) + a0 for m in re.findall(r"pts_time:([0-9.]+)", r.stderr)]
     (cikti / "sahneler.txt").write_text("\n".join(f"{t:.2f}" for t in zamanlar) + "\n")
     d = cikti / "sahne_kareleri"
     d.mkdir(exist_ok=True)
@@ -388,6 +390,17 @@ def main():
     cikti = Path(a.cikti)
     cikti.mkdir(parents=True, exist_ok=True)
     src = kaynak_al(is_, Path(os.environ.get("KAYNAK_YOLU", "kaynak.mp4")), a.kaynak)
+    adimlar = is_.pop("adimlar", None)
+    if adimlar:
+        for adim in adimlar:
+            alt = {**is_, **adim}
+            calistir(alt, src, cikti.parent / alt["ad"])
+    else:
+        calistir(is_, src, cikti)
+
+
+def calistir(is_, src, cikti):
+    cikti.mkdir(parents=True, exist_ok=True)
     mod = is_.get("mod", "kesit")
     if mod == "kareler":
         kareler(is_, src, cikti)
