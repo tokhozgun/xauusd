@@ -1,24 +1,318 @@
 [
-  ["Finans son", "finansZone"],
-  ["Ersem.", "Ertem."],
-  ["Dr.", "Dr."],
-  ["arıyoruz", "ağırlıyoruz"],
-  ["title 'ınızın", "unvanınızın"],
-  ["sağ olun.", "sağ olun."],
-  ["2010 -2014", "2010-2014"],
-  ["sevmiye piyasası kurulundaki", "Sermaye Piyasası Kurulundaki"],
-  ["Borsa İstanbul'da", "Borsa İstanbul da"],
-  ["bir takım", "birtakım"],
-  ["SPK 'nın", "SPK'nın"],
-  ["liyakata", "liyakate"],
-  ["doktoratizm,", "doktora tezim"],
-  ["danışmanına", "danışmanlığında"],
-  ["evreye", "devreye"],
-  ["Anderson,", "Andersen"],
-  ["sahibine zorksi", "Sarbanes-Oxley"],
-  ["morgıç", "mortgage"],
-  ["morgıç,", "mortgage,"],
-  ["hipoteğiyle", "ipoteğiyle"],
-  ["tabi", "tabii"],
-  ["süreçlerde süreçlerde", "süreçlerde"]
+ [
+  "Finans son",
+  "finansZone"
+ ],
+ [
+  "Ersem.",
+  "Ertem."
+ ],
+ [
+  "Dr.",
+  "Dr."
+ ],
+ [
+  "arıyoruz",
+  "ağırlıyoruz"
+ ],
+ [
+  "title 'ınızın",
+  "unvanınızın"
+ ],
+ [
+  "sağ olun.",
+  "sağ olun."
+ ],
+ [
+  "2010 -2014",
+  "2010-2014"
+ ],
+ [
+  "sevmiye piyasası kurulundaki",
+  "Sermaye Piyasası Kurulundaki"
+ ],
+ [
+  "Borsa İstanbul'da",
+  "Borsa İstanbul da"
+ ],
+ [
+  "bir takım",
+  "birtakım"
+ ],
+ [
+  "SPK 'nın",
+  "SPK'nın"
+ ],
+ [
+  "liyakata",
+  "liyakate"
+ ],
+ [
+  "doktoratizm,",
+  "doktora tezim"
+ ],
+ [
+  "danışmanına",
+  "danışmanlığında"
+ ],
+ [
+  "evreye",
+  "devreye"
+ ],
+ [
+  "Anderson,",
+  "Andersen"
+ ],
+ [
+  "sahibine zorksi",
+  "Sarbanes-Oxley"
+ ],
+ [
+  "morgıç",
+  "mortgage"
+ ],
+ [
+  "morgıç,",
+  "mortgage,"
+ ],
+ [
+  "hipoteğiyle",
+  "ipoteğiyle"
+ ],
+ [
+  "tabi",
+  "tabii"
+ ],
+ [
+  "süreçlerde süreçlerde",
+  "süreçlerde"
+ ],
+ [
+  "IMF 'nin",
+  "IMF'nin"
+ ],
+ [
+  "IMF 'ye",
+  "IMF'ye"
+ ],
+ [
+  "riskini erken",
+  "riskin erken"
+ ],
+ [
+  "kamuya aydınlatma",
+  "kamuoyu aydınlatma"
+ ],
+ [
+  "yaptırımlarının",
+  "yaptırımların"
+ ],
+ [
+  "tıfta",
+  "atıfta"
+ ],
+ [
+  "hakkında yemeyelim",
+  "hakkını yemeyelim"
+ ],
+ [
+  "girişen",
+  "gelişen"
+ ],
+ [
+  "Birleşik Fon Bankası 'na",
+  "Birleşik Fon Bankası'na"
+ ],
+ [
+  "TMSF 'ye",
+  "TMSF'ye"
+ ],
+ [
+  "halkar",
+  "halka arz"
+ ],
+ [
+  "2010 -2014'teki",
+  "2010-2014'teki"
+ ],
+ [
+  "2024 -2025",
+  "2024-2025"
+ ],
+ [
+  "%45 -55",
+  "%45-55"
+ ],
+ [
+  "SEMP piyasası",
+  "sermaye piyasası"
+ ],
+ [
+  "finansal sürdürülebilir araştırmamda",
+  "finansal sürdürülebilirlik araştırmamda"
+ ],
+ [
+  "parama bine",
+  "paramı bine"
+ ],
+ [
+  "ISO 500",
+  "İSO 500"
+ ],
+ [
+  "hisse senede",
+  "hisse senedi"
+ ],
+ [
+  "makinelarda",
+  "makinelerde"
+ ],
+ [
+  "Halka arzılarda",
+  "Halka arzlarda"
+ ],
+ [
+  "%90 'ını",
+  "%90'ını"
+ ],
+ [
+  "2 ,5",
+  "2,5"
+ ],
+ [
+  "4 ,5",
+  "4,5"
+ ],
+ [
+  "karnını",
+  "kârını"
+ ],
+ [
+  "danışmanlığa maliyetini",
+  "danışmanlığı al, maliyetini"
+ ],
+ [
+  "yatırım alakalı",
+  "yatırım ahlakı"
+ ],
+ [
+  "kavgamız olduğumu",
+  "kavgamız olduğunu"
+ ],
+ [
+  "non -event",
+  "non-event"
+ ],
+ [
+  "önlüküyoruz?",
+  "övünüyoruz?"
+ ],
+ [
+  "elinize ateşe",
+  "elinizi ateşe"
+ ],
+ [
+  "5 -6",
+  "5-6"
+ ],
+ [
+  "Merkez Bankası 'nın",
+  "Merkez Bankası'nın"
+ ],
+ [
+  "bas puandan",
+  "baz puandan"
+ ],
+ [
+  "bas puanlık",
+  "baz puanlık"
+ ],
+ [
+  "likit de krizi",
+  "likidite krizi"
+ ],
+ [
+  "Derneği 'nin",
+  "Derneği'nin"
+ ],
+ [
+  "parakende",
+  "perakende"
+ ],
+ [
+  "parakendesi",
+  "perakendesi"
+ ],
+ [
+  "CEO 'lar ile CEO 'lar ile",
+  "CEO'larıyla, CFO'larıyla"
+ ],
+ [
+  "Güzen",
+  "Güzem"
+ ],
+ [
+  "talepler alması",
+  "talep daralması"
+ ],
+ [
+  "yaraşacak",
+  "yer açacak"
+ ],
+ [
+  "1 ,5 -2",
+  "1,5-2"
+ ],
+ [
+  "fiyat istikrar",
+  "fiyat istikrarı"
+ ],
+ [
+  "Cari açıklar,",
+  "Cari açık,"
+ ],
+ [
+  "dolar altını",
+  "dolar, altın"
+ ],
+ [
+  "Tekerleşmiş",
+  "Tekelleşmiş"
+ ],
+ [
+  "Concorda'da ve",
+  "konkordato ve"
+ ],
+ [
+  "Concorda'da iflas",
+  "konkordato ve iflas"
+ ],
+ [
+  "halka arzıdan",
+  "halka arzdan"
+ ],
+ [
+  "sermesine",
+  "sermayesine"
+ ],
+ [
+  "Can 'ı",
+  "Can'ı"
+ ],
+ [
+  "açık açık programında",
+  "Açık Açık programında"
+ ],
+ [
+  "Hoşçakalın.",
+  "Hoşça kalın."
+ ],
+ [
+  "makro ekonomide",
+  "makroekonomide"
+ ],
+ [
+  "Enron Worldcom",
+  "Enron, WorldCom"
+ ]
 ]
