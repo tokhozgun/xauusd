@@ -223,6 +223,58 @@ def varsayilan_kirpma(w, h):
             "alt": {"x": 0, "y": 0, "w": w // 2, "h": h}}
 
 
+def ses_enerjisi(src, t0, sure, sr=16000, pencere=0.02):
+    """[t0, t0+sure] aralığının 20 ms'lik pencerelerde dB enerjisi."""
+    import numpy as np
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{max(0, t0):.3f}", "-t", f"{sure:.3f}", "-i", str(src),
+                        "-ac", "1", "-ar", str(sr), "-f", "s16le", "-"], capture_output=True, check=True)
+    x = np.frombuffer(r.stdout, dtype=np.int16).astype(np.float32) / 32768.0
+    n = int(sr * pencere)
+    k = len(x) // n
+    if k == 0:
+        return np.array([]), pencere
+    x = x[:k * n].reshape(k, n)
+    db = 20 * np.log10(np.sqrt((x ** 2).mean(axis=1)) + 1e-6)
+    return db, pencere
+
+
+def sessizlige_hizala(src, bas, son):
+    """Kesim noktalarını kelime sınırından en yakın nefes/sessizlik anına kaydırır.
+    Başlangıç: ilk kelimeden önceki en fazla 0.6 sn içinde, sessiz bölgenin sonuna yakın (kelimeden ~0.1 sn önce).
+    Bitiş: son kelimeden sonraki en fazla 0.7 sn içinde, sessizliğin ortası; böylece son hece kırpılmaz."""
+    import numpy as np
+    # --- başlangıç
+    ara0 = 0.6
+    db, p = ses_enerjisi(src, bas - ara0, ara0 + 0.05)
+    yeni_bas = bas - 0.08
+    if len(db):
+        esik = min(db.min() + 10, -38)
+        sessiz = db < esik
+        # kelimeye en yakın sessiz pencereyi bul (sondan geriye)
+        idx = [i for i in range(len(db) - 1, -1, -1) if sessiz[i]]
+        if idx:
+            yeni_bas = (bas - ara0) + idx[0] * p - 0.02
+            yeni_bas = min(yeni_bas, bas - 0.10)
+    # --- bitiş
+    ara1 = 0.7
+    db, p = ses_enerjisi(src, son, ara1)
+    yeni_son = son + 0.25
+    if len(db):
+        esik = min(db.min() + 10, -38)
+        sessiz = db < esik
+        # sondan sonraki ilk 'en az 120 ms' süren sessiz bölge
+        uz = max(1, int(0.12 / p))
+        for i in range(len(db) - uz):
+            if sessiz[i:i + uz].all():
+                bolge_son = i
+                while bolge_son < len(db) and sessiz[bolge_son]:
+                    bolge_son += 1
+                orta = (i + min(bolge_son, i + int(0.4 / p))) / 2
+                yeni_son = son + orta * p
+                break
+    return max(0.0, round(yeni_bas, 3)), round(yeni_son, 3)
+
+
 def sahne_parcalari(sahneler, bas, son, varsayilan="bolunmus"):
     """Mutlak zamanlı sahne listesini [bas, son] aralığına keser; boşlukları varsayılan düzenle doldurur."""
     out, t = [], bas
@@ -280,14 +332,20 @@ def kesit(is_, src: Path, cikti: Path):
     for k in is_["kesitler"]:
         ad = f"{k['id']}_{k['ad']}"
         bas, son = float(k["bas"]), float(k["son"])
+        if is_.get("sessizlige_hizala", True):
+            kb, ks = bas, son
+            bas, son = sessizlige_hizala(src, bas, son)
+            print(f"  hizalama: {kb:.2f}->{bas:.2f}  {ks:.2f}->{son:.2f}", flush=True)
         dur = son - bas
         print(f"\n=== {ad}: {bas:.1f}–{son:.1f} ({dur:.0f} sn)", flush=True)
 
-        # 1) yatay kesit
+        # 1) yatay kesit (yumuşak ses giriş/çıkışı)
         yatay = cikti / f"{ad}_yatay.mp4"
-        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", bas, "-i", src, "-t", dur,
+        af = ("loudnorm=I=-14:TP=-1.5:LRA=11,"
+              f"afade=t=in:st=0:d=0.06,afade=t=out:st={max(0, dur - 0.18):.3f}:d=0.18")
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{bas:.3f}", "-i", src, "-t", f"{dur:.3f}",
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
-            "-c:a", "aac", "-b:a", "160k", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+            "-c:a", "aac", "-b:a", "160k", "-af", af,
             "-movflags", "+faststart", yatay])
 
         # 2) altyazı
