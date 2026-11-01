@@ -223,6 +223,49 @@ def varsayilan_kirpma(w, h):
             "alt": {"x": 0, "y": 0, "w": w // 2, "h": h}}
 
 
+def sahne_parcalari(sahneler, bas, son, varsayilan="bolunmus"):
+    """Mutlak zamanlı sahne listesini [bas, son] aralığına keser; boşlukları varsayılan düzenle doldurur."""
+    out, t = [], bas
+    for s in sorted(sahneler, key=lambda x: x["bas"]):
+        a, z = max(s["bas"], bas), min(s["son"], son)
+        if z <= a:
+            continue
+        if a > t + 0.01:
+            out.append((t, a, varsayilan))
+        out.append((a, z, s["duzen"]))
+        t = z
+    if son > t + 0.01:
+        out.append((t, son, varsayilan))
+    return out
+
+
+def dikey_parca(src, sb, sd, duzen, hedef, tmp):
+    """Bir sahne için 1080x1920 sessiz video parçası. Panel kırpması canlı ya da 'kare' (sabit kare) olabilir."""
+    girdiler = ["-ss", f"{sb:.3f}", "-t", f"{sd:.3f}", "-i", str(src)]
+    filtreler, n = [], 1
+    canli = [p for p in ("ust", "alt") if "kare" not in duzen[p]]
+    if len(canli) == 2:
+        filtreler.append("[0:v]split=2[c_ust][c_alt]")
+    elif len(canli) == 1:
+        filtreler.append(f"[0:v]null[c_{canli[0]}]")
+    for p, yuk in (("ust", UST_H), ("alt", ALT_H)):
+        k = duzen[p]
+        if "kare" in k:
+            png = tmp / f"kare_{float(k['kare']):.2f}.png"
+            if not png.exists():
+                sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", k["kare"], "-i", src, "-frames:v", "1", png])
+            girdiler += ["-loop", "1", "-framerate", "30", "-t", f"{sd:.3f}", "-i", str(png)]
+            filtreler.append(f"[{n}:v]" + kirp_filtre(k, p, yuk))
+            n += 1
+        else:
+            filtreler.append(f"[c_{p}]" + kirp_filtre(k, p, yuk))
+    filtreler.append(f"color=white:s={W}x{BANT_H}:r=30:d={sd:.3f}[bant]")
+    filtreler.append("[ust][bant][alt]vstack=inputs=3:shortest=1,fps=30,format=yuv420p[v]")
+    sh(["ffmpeg", "-y", "-loglevel", "error", *girdiler, "-filter_complex", ";".join(filtreler),
+        "-map", "[v]", "-an", "-t", f"{sd:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+        "-r", "30", hedef])
+
+
 def kesit(is_, src: Path, cikti: Path):
     cikti.mkdir(parents=True, exist_ok=True)
     w, h = boyut(src)
@@ -260,19 +303,23 @@ def kesit(is_, src: Path, cikti: Path):
         ass = tmp / f"{ad}.ass"
         ass_yaz(bloklar, ass, font, punto)
 
-        # 3) dikey reels: üst konuk, beyaz bant, alt sunucu
+        # 3) dikey reels: sahne sahne üst konuk + beyaz bant + alt sunucu, sonra altyazı
         ass_arg = f"ass='{ass}'" + (f":fontsdir='{fontdir}'" if fontdir else "")
-        fc = ";".join([
-            "[0:v]split=2[a][b]",
-            "[a]" + kirp_filtre(kirpma["ust"], "ust", UST_H),
-            "[b]" + kirp_filtre(kirpma["alt"], "alt", ALT_H),
-            f"color=white:s={W}x{BANT_H}:r=30[bant]",
-            "[ust][bant][alt]vstack=inputs=3:shortest=1,fps=30,format=yuv420p," + ass_arg + "[v]",
-        ])
-        sh(["ffmpeg", "-y", "-loglevel", "error", "-i", yatay, "-filter_complex", fc,
-            "-map", "[v]", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-            "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", "-t", dur,
-            cikti / f"{ad}_reels.mp4"])
+        duzenler = is_.get("duzenler") or {"bolunmus": kirpma}
+        sahneler = sahne_parcalari(is_.get("sahneler", []), bas, son)
+        parcalar = []
+        for i, (sb, sz, dz) in enumerate(sahneler):
+            parca = tmp / f"{ad}_p{i:02d}.mp4"
+            dikey_parca(src, sb, sz - sb, duzenler[dz], parca, tmp)
+            parcalar.append(parca)
+        liste = tmp / f"{ad}_liste.txt"
+        liste.write_text("".join(f"file '{p.resolve()}'\n" for p in parcalar))
+        birlesik = tmp / f"{ad}_dikey.mp4"
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", liste, "-c", "copy", birlesik])
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-i", birlesik, "-i", yatay,
+            "-filter_complex", f"[0:v]{ass_arg}[v]", "-map", "[v]", "-map", "1:a?",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "copy",
+            "-movflags", "+faststart", "-t", dur, cikti / f"{ad}_reels.mp4"])
 
         # 4) önizleme karesi
         sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", min(5, dur / 2), "-i", cikti / f"{ad}_reels.mp4",
