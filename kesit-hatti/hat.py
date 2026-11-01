@@ -255,24 +255,64 @@ def sessizlige_hizala(src, bas, son):
         if idx:
             yeni_bas = (bas - ara0) + idx[0] * p - 0.02
             yeni_bas = min(yeni_bas, bas - 0.10)
-    # --- bitiş
-    ara1 = 0.7
-    db, p = ses_enerjisi(src, son, ara1)
-    yeni_son = son + 0.25
-    if len(db):
-        esik = min(db.min() + 10, -38)
-        sessiz = db < esik
-        # sondan sonraki ilk 'en az 120 ms' süren sessiz bölge
-        uz = max(1, int(0.12 / p))
-        for i in range(len(db) - uz):
-            if sessiz[i:i + uz].all():
-                bolge_son = i
-                while bolge_son < len(db) and sessiz[bolge_son]:
-                    bolge_son += 1
-                orta = (i + min(bolge_son, i + int(0.4 / p))) / 2
-                yeni_son = son + orta * p
-                break
+    # --- bitiş: doğal kuyruk + en sakin kare
+    yeni_son = dogal_bitis(src, son)
     return max(0.0, round(yeni_bas, 3)), round(yeni_son, 3)
+
+
+def sonraki_konusma(src, son, en_fazla=2.0):
+    """Son kelimeden sonra bir sonraki konuşmanın (kimin olursa) başladığı an; yoksa son+en_fazla."""
+    db, p = ses_enerjisi(src, son, en_fazla)
+    if not len(db):
+        return son + 0.4
+    esik = min(db.min() + 12, -36)
+    ses_var = db >= esik
+    uz = max(1, int(0.10 / p))
+    i = 0
+    while i < len(db) and ses_var[i]:  # son hecenin kuyruğunu geç
+        i += 1
+    while i < len(db) - uz:
+        if ses_var[i:i + uz].all():
+            return son + i * p
+        i += 1
+    return son + en_fazla
+
+
+def hareket_egrisi(src, t0, t1, fps=30):
+    """[t0, t1] aralığında ardışık kareler arasındaki ortalama piksel farkı (küçük gri kareler)."""
+    import numpy as np
+    w, h = 160, 90
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t0:.3f}", "-t", f"{t1 - t0:.3f}", "-i", str(src),
+                        "-vf", f"fps={fps},scale={w}:{h},format=gray", "-f", "rawvideo", "-"],
+                       capture_output=True, check=True)
+    k = len(r.stdout) // (w * h)
+    if k < 3:
+        return np.array([]), 1 / fps
+    x = np.frombuffer(r.stdout[:k * w * h], dtype=np.uint8).reshape(k, h, w).astype(np.float32)
+    d = np.abs(np.diff(x, axis=0)).mean(axis=(1, 2))
+    return np.convolve(d, np.ones(7) / 7, mode="same"), 1 / fps
+
+
+def dogal_bitis(src, son):
+    """Son kelimeden sonra: karşı konuşma başlamadan önce, en az 0.45 sn kuyruk bırakıp
+    görüntünün en sakin olduğu ana (yüz/el hareketi durulmuş) kes."""
+    sinir = sonraki_konusma(src, son, 2.0) - 0.12
+    en_erken = son + 0.45
+    en_gec = min(son + 1.6, sinir)
+    if en_gec <= en_erken:  # karşı taraf hemen giriyorsa kısa kuyruk, kapanışı fade taşır
+        return max(son + 0.2, min(sinir, son + 0.45))
+    hz, adim = hareket_egrisi(src, son, en_gec + 0.05)
+    if not len(hz):
+        return en_erken
+    i0 = int((en_erken - son) / adim)
+    i1 = min(len(hz), int((en_gec - son) / adim))
+    if i1 <= i0:
+        return en_erken
+    import numpy as np
+    pencere = hz[i0:i1]
+    # aynı sakinlikte daha kısa kuyruk tercih edilir
+    agirlik = pencere * (1 + 0.15 * np.linspace(0, 1, len(pencere)))
+    return son + (i0 + int(agirlik.argmin())) * adim
 
 
 def sahne_parcalari(sahneler, bas, son, varsayilan="bolunmus"):
@@ -342,9 +382,10 @@ def kesit(is_, src: Path, cikti: Path):
         # 1) yatay kesit (yumuşak ses giriş/çıkışı)
         yatay = cikti / f"{ad}_yatay.mp4"
         af = ("loudnorm=I=-14:TP=-1.5:LRA=11,"
-              f"afade=t=in:st=0:d=0.06,afade=t=out:st={max(0, dur - 0.18):.3f}:d=0.18")
+              f"afade=t=in:st=0:d=0.10,afade=t=out:st={max(0, dur - 0.40):.3f}:d=0.40")
+        vf = f"fade=t=in:st=0:d=0.15,fade=t=out:st={max(0, dur - 0.40):.3f}:d=0.40"
         sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{bas:.3f}", "-i", src, "-t", f"{dur:.3f}",
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+            "-vf", vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
             "-c:a", "aac", "-b:a", "160k", "-af", af,
             "-movflags", "+faststart", yatay])
 
@@ -375,7 +416,8 @@ def kesit(is_, src: Path, cikti: Path):
         birlesik = tmp / f"{ad}_dikey.mp4"
         sh(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", liste, "-c", "copy", birlesik])
         sh(["ffmpeg", "-y", "-loglevel", "error", "-i", birlesik, "-i", yatay,
-            "-filter_complex", f"[0:v]{ass_arg}[v]", "-map", "[v]", "-map", "1:a?",
+            "-filter_complex", f"[0:v]{ass_arg},fade=t=in:st=0:d=0.15,fade=t=out:st={max(0, dur - 0.40):.3f}:d=0.40[v]",
+            "-map", "[v]", "-map", "1:a?",
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "copy",
             "-movflags", "+faststart", "-t", dur, cikti / f"{ad}_reels.mp4"])
 

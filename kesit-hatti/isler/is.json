@@ -1,5 +1,5 @@
 {
-  "ad": "v2",
+  "ad": "v3",
   "mod": "kesit",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -149,7 +149,7 @@
   ],
   "adimlar": [
     {
-      "ad": "v2-grup1-acilis-ve-kok-sorun",
+      "ad": "v3-grup1-acilis-ve-kok-sorun",
       "mod": "kesit",
       "kesitler": [
         {
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "ad": "v2-grup2-danisman-kimdir",
+      "ad": "v3-grup2-danisman-kimdir",
       "mod": "kesit",
       "kesitler": [
         {
@@ -196,7 +196,7 @@
       ]
     },
     {
-      "ad": "v2-grup3-krizler-tekrar-ediyor",
+      "ad": "v3-grup3-krizler-tekrar-ediyor",
       "mod": "kesit",
       "kesitler": [
         {
@@ -223,7 +223,7 @@
       ]
     },
     {
-      "ad": "v2-grup4-toparlanma-neden-zor",
+      "ad": "v3-grup4-toparlanma-neden-zor",
       "mod": "kesit",
       "kesitler": [
         {
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "ad": "v2-grup5-yatirim-ahlaki-ve-katma-deger",
+      "ad": "v3-grup5-yatirim-ahlaki-ve-katma-deger",
       "mod": "kesit",
       "kesitler": [
         {
@@ -291,7 +291,7 @@
       ]
     },
     {
-      "ad": "v2-grup6-faiz-tuketim-rezerv",
+      "ad": "v3-grup6-faiz-tuketim-rezerv",
       "mod": "kesit",
       "kesitler": [
         {
@@ -332,7 +332,7 @@
       ]
     },
     {
-      "ad": "v2-grup7-kapanis-katma-deger-yok",
+      "ad": "v3-grup7-kapanis-katma-deger-yok",
       "mod": "kesit",
       "kesitler": [
         {
