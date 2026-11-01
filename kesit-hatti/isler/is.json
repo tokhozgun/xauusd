@@ -1,5 +1,5 @@
 {
-  "ad": "grup2-danisman-kimdir",
+  "ad": "grup3-krizler-tekrar-ediyor",
   "mod": "kesit",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -83,6 +83,21 @@
         "w": 1100,
         "h": 896
       }
+    },
+    "can_yakin_2": {
+      "ust": {
+        "x": 90,
+        "y": 40,
+        "w": 1100,
+        "h": 896
+      },
+      "alt": {
+        "kare": 360.0,
+        "x": 1006,
+        "y": 62,
+        "w": 808,
+        "h": 658
+      }
     }
   },
   "sahneler": [
@@ -105,37 +120,34 @@
       "bas": 48.52,
       "son": 79.5,
       "duzen": "guzem_yakin_b"
-    }
-  ],
-  "adimlar": [
-    {
-      "ad": "grup2-danisman-kimdir",
-      "mod": "kesit",
-      "kesitler": [
-        {
-          "id": "01",
-          "ad": "danismanin-dogrusu-yonetim-danismanligi",
-          "bas": 189.3,
-          "son": 225.4,
-          "srt": "kesit-hatti/isler/srt_grup2/01_danismanin-dogrusu-yonetim-danismanligi.srt"
-        },
-        {
-          "id": "02",
-          "ad": "87-kat-artis-basari-degildir",
-          "bas": 225.4,
-          "son": 274.3,
-          "srt": "kesit-hatti/isler/srt_grup2/02_87-kat-artis-basari-degildir.srt"
-        }
-      ]
     },
     {
-      "ad": "sahne-can-yakin",
-      "mod": "sahne",
-      "sahne_aralik": [
-        280,
-        360
-      ],
-      "sahne_esik": 0.08
+      "bas": 292.8,
+      "son": 346.7,
+      "duzen": "can_yakin_2"
+    }
+  ],
+  "kesitler": [
+    {
+      "id": "01",
+      "ad": "enrondan-2008e",
+      "bas": 274.3,
+      "son": 327.5,
+      "srt": "kesit-hatti/isler/srt_grup3/01_enrondan-2008e.srt"
+    },
+    {
+      "id": "02",
+      "ad": "imf-yeni-normal",
+      "bas": 328.0,
+      "son": 382.5,
+      "srt": "kesit-hatti/isler/srt_grup3/02_imf-yeni-normal.srt"
+    },
+    {
+      "id": "03",
+      "ad": "riskin-erken-tespiti-komitesi",
+      "bas": 382.4,
+      "son": 429.2,
+      "srt": "kesit-hatti/isler/srt_grup3/03_riskin-erken-tespiti-komitesi.srt"
     }
   ]
 }
