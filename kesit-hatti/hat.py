@@ -89,7 +89,11 @@ def kareler(is_, src: Path, cikti: Path):
 def kelimeler_whisper(wav: Path, model_adi: str, dil: str):
     from faster_whisper import WhisperModel
     model = WhisperModel(model_adi, device="cpu", compute_type="int8")
-    segs, _ = model.transcribe(str(wav), language=dil, word_timestamps=True, vad_filter=True,
+    import wave
+    import numpy as np
+    with wave.open(str(wav), "rb") as wf:
+        ses = np.frombuffer(wf.readframes(wf.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0
+    segs, _ = model.transcribe(ses, language=dil, word_timestamps=True, vad_filter=True,
                                initial_prompt="Dr. İbrahim Can, Güzem Yılmaz Ertem, Açık Açık, halka arz, konkordato, SPK.")
     out = []
     for s in segs:
