@@ -45,7 +45,7 @@ def main():
     cik.mkdir(parents=True, exist_ok=True)
     kel = uygula(kel, duz)
     for k in kesitler:
-        parca = [w for w in kel if w[0] >= k["bas"] - 0.05 and w[1] <= k["son"] + 0.3]
+        parca = [w for w in kel if w[0] >= k["bas"] - 0.05 and w[1] <= k["son"] + 0.15]
         bloklar = parcala(parca)
         yol = cik / f"{k['id']}_{k['ad']}.srt"
         srt_yaz(bloklar, yol)

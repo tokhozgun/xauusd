@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "ad": "talep-daraliyor-faiz-inmeli-mi",
+    "bas": 951.0,
+    "son": 1015.7
+  },
+  {
+    "id": "02",
+    "ad": "faiz-kanser-hastasina-agri-kesici",
+    "bas": 1016.0,
+    "son": 1058.9
+  },
+  {
+    "id": "03",
+    "ad": "cay-servisi-anekdotu",
+    "bas": 1059.8,
+    "son": 1099.95
+  },
+  {
+    "id": "04",
+    "ad": "fon-krizi-milyonlarca-kisi",
+    "bas": 1100.0,
+    "son": 1141.7
+  },
+  {
+    "id": "05",
+    "ad": "rezerv-hangisini-karsilayacak",
+    "bas": 1142.0,
+    "son": 1192.7
+  }
+]
