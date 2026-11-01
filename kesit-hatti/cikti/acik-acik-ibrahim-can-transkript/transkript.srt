@@ -1,0 +1,2282 @@
+1
+00:00:13,200 --> 00:00:15,600
+Finans son YouTube kanalından
+herkese merhaba.
+
+2
+00:00:15,820 --> 00:00:17,120
+Ben Güzem Yılmaz Ersem.
+
+3
+00:00:17,240 --> 00:00:20,360
+Açık Açık programının bu bölümünde
+finansal yönetim danışmanı
+
+4
+00:00:20,360 --> 00:00:21,660
+Dr. İbrahim Can bizimle.
+
+5
+00:00:21,720 --> 00:00:23,120
+Hocam hoş geldiniz. Hoş bulduk.
+
+6
+00:00:23,240 --> 00:00:26,380
+Çok teşekkür ediyoruz katıldığınız
+için ilk defa arıyoruz sizi
+
+7
+00:00:26,380 --> 00:00:27,960
+bu mecrada.
+
+8
+00:00:28,060 --> 00:00:30,840
+Tekrar sağ olun. Şimdi tabi title
+'ınızın
+
+9
+00:00:30,840 --> 00:00:33,260
+hakkını veremediğimiz ülkece bir
+dönemdeyiz.
+
+10
+00:00:33,360 --> 00:00:36,520
+Yani bir finansal yönetimden
+bahsetmek
+
+11
+00:00:36,520 --> 00:00:38,120
+maalesef mümkün değil.
+
+12
+00:00:38,120 --> 00:00:41,000
+Mümkün olabilirdi belki geçtiğimiz
+
+13
+00:00:41,000 --> 00:00:43,820
+senelerde çünkü aslında borsaya
+çok kıymetli
+
+14
+00:00:43,820 --> 00:00:45,360
+şirketler açıldı.
+
+15
+00:00:45,600 --> 00:00:48,060
+Halka açıldıktan sonra bu bir
+şeffaflık getirdi.
+
+16
+00:00:48,340 --> 00:00:51,540
+Bir yandan sürdürülebilir yönetim
+için onlar da
+
+17
+00:00:51,540 --> 00:00:54,720
+daha ne diyelim kitabına uygun bir
+yönetim
+
+18
+00:00:54,720 --> 00:00:56,180
+kadrosu geldi.
+
+19
+00:00:56,420 --> 00:00:58,960
+Fakat sonrasında tabi bu
+
+20
+00:00:58,960 --> 00:01:01,560
+halka arz edilen şirketlerin de
+kalitesi düştü.
+
+21
+00:01:01,660 --> 00:01:03,500
+Borsada yapılan manipülasyonlar
+arttı.
+
+22
+00:01:03,840 --> 00:01:05,160
+Kalite maalesef bozuldu.
+
+23
+00:01:05,160 --> 00:01:08,220
+Nasıl değerlendiriyorsunuz? Yani
+ben çok özür dilerim izleyiciden
+
+24
+00:01:08,220 --> 00:01:10,840
+de direkt fon krizi diye soruya
+başlamak istemedim.
+
+25
+00:01:10,940 --> 00:01:13,780
+Çok konuştuk bunu artık. Biliyoruz
+ortada her şey.
+
+26
+00:01:14,040 --> 00:01:17,120
+Asıl kök sorunu ben size sormak
+
+27
+00:01:17,120 --> 00:01:18,660
+istedim. Etik kısmını.
+
+28
+00:01:18,660 --> 00:01:20,420
+Evet şöyle
+
+29
+00:01:20,420 --> 00:01:22,480
+2010
+
+30
+00:01:22,480 --> 00:01:25,580
+yılından başlarsak halka
+
+31
+00:01:25,580 --> 00:01:28,340
+arzlara. 2010 -2014 yıllarında
+
+32
+00:01:28,340 --> 00:01:30,780
+halka arz seferberliği adı altında
+
+33
+00:01:30,780 --> 00:01:33,880
+bir aslında
+
+34
+00:01:33,880 --> 00:01:35,120
+politika başlatıldı.
+
+35
+00:01:35,320 --> 00:01:36,840
+Bu bir ekonomi politikasıydı.
+
+36
+00:01:37,420 --> 00:01:40,300
+117 şirketin 2010 -2014
+
+37
+00:01:40,300 --> 00:01:42,160
+yılında halka arzı gerçekleşti.
+
+38
+00:01:42,160 --> 00:01:44,120
+ve 17'si iflas etti.
+
+39
+00:01:44,700 --> 00:01:47,780
+Toplamda %76'sı
+
+40
+00:01:47,780 --> 00:01:50,920
+ya endeksin altında ya enflasyonun
+altında
+
+41
+00:01:50,920 --> 00:01:53,360
+ya da doğrudan bilanço zararı
+açıkladı.
+
+42
+00:01:54,140 --> 00:01:56,440
+117 şirketin 17'si iflas,
+
+43
+00:01:56,640 --> 00:01:59,160
+%76'sı kabul
+
+44
+00:01:59,160 --> 00:02:01,860
+edilemeyecek bir negatif
+performans sergiledi.
+
+45
+00:02:01,860 --> 00:02:04,000
+Şimdi soru şu, eğer
+
+46
+00:02:04,000 --> 00:02:07,100
+zorunlu iki bağımsız yönetim
+kurulu üyesi,
+
+47
+00:02:07,260 --> 00:02:10,420
+bağımsız denetçi, yeminli mali
+
+48
+00:02:10,420 --> 00:02:13,600
+müşavir, sevmiye piyasası
+kurulundaki en az
+
+49
+00:02:13,600 --> 00:02:16,700
+bir uzman, tabii ki buna bakanlık
+
+50
+00:02:16,700 --> 00:02:19,300
+ve Borsa İstanbul'da ve
+
+51
+00:02:19,300 --> 00:02:22,480
+diğer bir takım denetim
+mekanizmaları da geçiyor.
+
+52
+00:02:22,720 --> 00:02:25,660
+Yatırımcı ilişkileri başkanı
+olarak bir kişi ve bir
+
+53
+00:02:25,660 --> 00:02:28,620
+yardımcısı, SPK 'nın iki lisansına
+da haiz
+
+54
+00:02:28,620 --> 00:02:31,120
+olarak orada bir kamu görevi
+yürütüyor.
+
+55
+00:02:31,120 --> 00:02:34,200
+Bu kadar denetim, gözetim,
+
+56
+00:02:34,800 --> 00:02:37,620
+eğitimli, donanımlı, lisanslı,
+yüksek
+
+57
+00:02:37,620 --> 00:02:40,580
+tahsilli kişi varsa, 2010 -2014
+
+58
+00:02:40,580 --> 00:02:43,680
+yıllarında 117 şirketin 17'si
+iflas
+
+59
+00:02:43,680 --> 00:02:46,540
+ve %76'sı ciddi bir negatif
+
+60
+00:02:46,540 --> 00:02:48,040
+performans nasıl sergiler?
+
+61
+00:02:48,260 --> 00:02:51,060
+Bu bize çok somut olarak şu
+gerçeği ortaya
+
+62
+00:02:51,060 --> 00:02:53,020
+koyuyor. Mevcut
+
+63
+00:02:53,020 --> 00:02:56,180
+düzenlemeler, ilgili mali mevzuat
+
+64
+00:02:56,180 --> 00:02:59,280
+yeterli olmakla birlikte bunun
+yönetim
+
+65
+00:02:59,280 --> 00:03:01,600
+bilimleri ve ilgili olan finans,
+
+66
+00:03:02,020 --> 00:03:04,740
+sürdürülebilirlik, mali hukuk gibi
+
+67
+00:03:04,740 --> 00:03:07,940
+dallar yeterince uygulanmıyor.
+
+68
+00:03:07,940 --> 00:03:09,420
+Çünkü bunlar ülkemizde...
+
+69
+00:03:09,420 --> 00:03:11,800
+Konu mevzuat değil, konu bunun
+
+70
+00:03:11,800 --> 00:03:14,700
+uygulanması ve anladığım
+
+71
+00:03:14,700 --> 00:03:17,520
+kadarıyla burada da bu sorunun
+cevabı biraz
+
+72
+00:03:17,520 --> 00:03:20,480
+liyakata gidiyor. Demek ki bunu
+uygulayacak kişiler yeterli
+
+73
+00:03:20,480 --> 00:03:23,340
+donanıma sahip değiller ya da
+
+74
+00:03:23,340 --> 00:03:25,660
+siyasi baskı, bilmiyorum artık
+neresinden tutalım?
+
+75
+00:03:25,660 --> 00:03:27,960
+Evet, aslında çok boyutu var.
+
+76
+00:03:28,040 --> 00:03:31,060
+Benim doktoratizm, yönetim
+danışmanına değer yaratma
+
+77
+00:03:31,060 --> 00:03:33,960
+bir model önerisi. Aslında
+piyasada
+
+78
+00:03:33,960 --> 00:03:36,860
+danışman diye çok kısa özetlenen
+şeyin
+
+79
+00:03:36,860 --> 00:03:38,700
+doğrusu yönetim danışmanlığı.
+
+80
+00:03:38,840 --> 00:03:40,980
+Bunun 15 tane de alt başlığı var.
+
+81
+00:03:41,380 --> 00:03:44,200
+İşte pazarlama gibi, finans gibi
+
+82
+00:03:44,200 --> 00:03:47,260
+çeşitli başlıklar. Evet, ama
+finansal
+
+83
+00:03:47,260 --> 00:03:50,440
+yönetim danışmanlığı dendiğinde de
+finansın yönetimi
+
+84
+00:03:50,440 --> 00:03:52,940
+değil, aslında bir şirket finansal
+varlıktır.
+
+85
+00:03:52,940 --> 00:03:55,760
+O şirketin tüm yönetim
+organizasyon
+
+86
+00:03:55,760 --> 00:03:58,080
+süreçlerinin sonucu olan şey
+
+87
+00:03:58,080 --> 00:04:01,140
+finanstır. Ama bunu ortaya
+koyarken
+
+88
+00:04:01,140 --> 00:04:04,300
+sadece hissenin 87 kat artışı
+
+89
+00:04:04,300 --> 00:04:06,400
+gibi bir şeye başarı diyemeyiz.
+
+90
+00:04:06,500 --> 00:04:09,640
+Çünkü burada bilim dediğimiz şey
+devreye giriyor,
+
+91
+00:04:10,000 --> 00:04:12,060
+hukuk dediğimiz şey devreye
+giriyor.
+
+92
+00:04:12,600 --> 00:04:15,120
+Burada... Şeffaflık,
+sürdürülebilirlik.
+
+93
+00:04:15,240 --> 00:04:18,400
+Evet, yönetişim, corporate
+governance dediğimiz
+
+94
+00:04:18,400 --> 00:04:21,360
+kurumsal yönetim ilkeleri ki bu da
+bir mevzuatın parçası.
+
+95
+00:04:21,360 --> 00:04:22,960
+Bunlar da evreye giriyor.
+
+96
+00:04:23,280 --> 00:04:26,300
+Şimdi biz bunları finansal
+sürdürülebilirlik teorisi olarak
+
+97
+00:04:26,300 --> 00:04:29,440
+birazdan konuşuruz ama halkın işte
+teoriyle
+
+98
+00:04:29,440 --> 00:04:30,960
+pratik birbirinden farklıdır.
+
+99
+00:04:31,080 --> 00:04:34,140
+Gerçek hayat şöyledir, böyledir
+dediği şeyler tam olarak doğru
+
+100
+00:04:34,140 --> 00:04:36,940
+değil. Çünkü bunun evveliyatı
+
+101
+00:04:36,940 --> 00:04:40,100
+2001 Enron Worldcom krizleri
+
+102
+00:04:40,100 --> 00:04:43,300
+Amerika merkezli başladığında
+dünyanın en
+
+103
+00:04:43,300 --> 00:04:45,980
+büyük bu şirketlerinin Arthur
+Anderson,
+
+104
+00:04:46,140 --> 00:04:48,640
+bağımsız denetim şirketiyle
+birlikte bir
+
+105
+00:04:48,640 --> 00:04:51,620
+yolsuzluğa karışması, bilançoda
+yapılan
+
+106
+00:04:51,620 --> 00:04:54,560
+usulsüzlükler ve bir
+
+107
+00:04:54,560 --> 00:04:57,340
+nevi fon gibi veya piyasadan
+varlık
+
+108
+00:04:57,340 --> 00:05:00,340
+toplama ve belli bir getiri
+vaadinin olduğu süreçlerde
+
+109
+00:05:00,340 --> 00:05:03,340
+süreçlerde ciddi bir yolsuzluk
+yapılması söz konusu
+
+110
+00:05:03,340 --> 00:05:06,200
+oldu. Hemen ardından sahibine
+zorksi yasası çıktı.
+
+111
+00:05:06,340 --> 00:05:09,200
+Altı ay gibi çok kısa bir sürede
+işte bağımsız denetime,
+
+112
+00:05:09,540 --> 00:05:12,060
+yönetim kurulu üyelerine,
+raporlamalara
+
+113
+00:05:12,060 --> 00:05:14,140
+ciddi standartlar getirildi.
+
+114
+00:05:14,140 --> 00:05:17,320
+Ama yine yeterli olmadı ki 7 yıl
+
+115
+00:05:17,320 --> 00:05:20,100
+sonra yaşanan 2008 krizi aslında
+
+116
+00:05:20,100 --> 00:05:23,040
+morgıç diyenler var ama sadece
+morgıç, konut kredisi,
+
+117
+00:05:23,160 --> 00:05:25,240
+konut hipoteğiyle sınırlı değildi.
+
+118
+00:05:25,840 --> 00:05:27,420
+2001 krizinin devamıdır.
+
+119
+00:05:28,060 --> 00:05:30,900
+Ve 2010'da çok önemli bir nokta
+var.
+
+120
+00:05:30,900 --> 00:05:33,720
+IMF 'nin uluslararası
+toplantısında
+
+121
+00:05:33,720 --> 00:05:36,580
+doktoralı finansal
+
+122
+00:05:36,580 --> 00:05:39,660
+yönetim danışmanlarının da
+katıldığı, kamu
+
+123
+00:05:39,660 --> 00:05:42,600
+mali otoritelerinin katıldığı 2010
+yılındaki IMF
+
+124
+00:05:42,600 --> 00:05:44,660
+küresel zirvesinin sonucu şu
+çıktı.
+
+125
+00:05:44,900 --> 00:05:47,820
+Yeni normal. Bu şu anlama geliyor.
+
+126
+00:05:48,360 --> 00:05:51,080
+Gelecekte yönetişim krizleri
+
+127
+00:05:51,080 --> 00:05:53,220
+finansal ekonomi krizlerine
+
+128
+00:05:53,220 --> 00:05:55,740
+dönüşme bakımından daha sık,
+
+129
+00:05:56,080 --> 00:05:58,040
+daha yüksek etkilerle olacak.
+
+130
+00:05:58,040 --> 00:06:01,000
+Bunu daha sonra kripto paralarda
+gördük.
+
+131
+00:06:01,180 --> 00:06:03,840
+İşte savaş ile birlikte
+
+132
+00:06:03,840 --> 00:06:06,480
+petrolde veya bazı ülkelerin
+
+133
+00:06:06,480 --> 00:06:09,400
+uluslararası ticaretinde ticaret
+
+134
+00:06:09,400 --> 00:06:12,320
+savaşları adını da alan silahlı
+
+135
+00:06:12,320 --> 00:06:15,020
+savaşın ekonomik savaşla iç içe
+geçtiği,
+
+136
+00:06:15,360 --> 00:06:18,420
+işte gümrük tariflerinin
+uygulandığı ve
+
+137
+00:06:18,420 --> 00:06:21,020
+diğer başka bir takım
+yaptırımlarının uygulandığı
+
+138
+00:06:21,020 --> 00:06:22,440
+süreçlerde gördük.
+
+139
+00:06:22,440 --> 00:06:25,200
+İşte bütün bunlar aslında risk
+yönetimi olarak da
+
+140
+00:06:25,200 --> 00:06:28,020
+şirketlerin dikkate alması,
+
+141
+00:06:28,200 --> 00:06:31,100
+hatta yasal zorunluluk olarak
+riskini erken
+
+142
+00:06:31,100 --> 00:06:34,260
+tespiti komitesi, denetimden
+sorumlu komite ve kurumsal
+
+143
+00:06:34,260 --> 00:06:37,140
+yönetim komitesi olarak üç
+komitenin halka açık
+
+144
+00:06:37,140 --> 00:06:40,060
+şirketlerde iki bağımsız yönetim
+kurulu üyesiyle
+
+145
+00:06:40,060 --> 00:06:42,920
+yürütmesi gerektiği bir yasal
+zorunluluk.
+
+146
+00:06:42,920 --> 00:06:46,100
+Ama şu an bu fon krizinde güncel
+
+147
+00:06:46,100 --> 00:06:49,280
+diye söylüyorum. Para piyasasına
+ilişkin
+
+148
+00:06:49,280 --> 00:06:51,760
+fonların haricinde hisse yoğun
+olan fonlarda
+
+149
+00:06:51,760 --> 00:06:54,580
+içerisinde bulunan hisselerin
+
+150
+00:06:54,580 --> 00:06:57,620
+şirketleri riskini
+
+151
+00:06:57,620 --> 00:07:00,480
+erken tespiti ve diğer
+komitelerden ötürü bir
+
+152
+00:07:00,480 --> 00:07:02,720
+kamuya aydınlatma yürüttüler mi?
+
+153
+00:07:02,720 --> 00:07:05,720
+Diye bunu dinleyenler bir
+bakarlarsa
+
+154
+00:07:05,720 --> 00:07:08,660
+işte aslında başka bir takım
+şeyleri de
+
+155
+00:07:08,660 --> 00:07:11,740
+görürler. Peki şimdi deniliyor ki
+2001'deki bir bankacılık
+
+156
+00:07:11,740 --> 00:07:13,780
+kriziydi. Bu da bir sermaye
+piyasaları krizi.
+
+157
+00:07:13,860 --> 00:07:16,540
+Önceki yayına da tıfta bulunayım.
+Mehmet Gerz ile sevgili Mehmet
+
+158
+00:07:16,540 --> 00:07:18,840
+Gerz ile çok değerli bir yayın
+yapmıştık yine bu stüdyoda.
+
+159
+00:07:19,200 --> 00:07:21,780
+Böyle de adlandırdı bir sermaye
+piyasaları krizi.
+
+160
+00:07:21,780 --> 00:07:24,940
+Fakat şöyle inancım yok
+
+161
+00:07:24,940 --> 00:07:27,720
+bankacılık krizinden sonra
+gerçekten
+
+162
+00:07:27,720 --> 00:07:30,700
+hani şöyle diyenler var yani bu
+sermaye piyasaları krizi ama
+
+163
+00:07:30,700 --> 00:07:33,720
+deprem oldu her şey yıkıldı çok
+kayıp
+
+164
+00:07:33,720 --> 00:07:36,860
+var ama yeni binaları çok sağlam
+yapacağız ve bir daha bu
+
+165
+00:07:36,860 --> 00:07:39,580
+başımıza gelmeyecek. 2001'de de
+öyle olmuştu yani biz öyle bir
+
+166
+00:07:39,580 --> 00:07:42,440
+bankacılık sistemi kurduk ki
+gerçekten hakkında
+
+167
+00:07:42,440 --> 00:07:45,400
+yemeyelim Türkiye'deki bankacılık
+sistemi oldukça güçlü
+
+168
+00:07:45,400 --> 00:07:48,100
+şu an Avrupa bankalarıyla bile
+kıyaslasanız bırakın
+
+169
+00:07:48,100 --> 00:07:51,100
+girişen ülkeleri. Ama sermaye
+piyasaları
+
+170
+00:07:51,100 --> 00:07:54,160
+için aynı şeyden bahsetmek mümkün
+değil
+
+171
+00:07:54,160 --> 00:07:57,200
+bence. Çünkü 2001'de bankacılık
+krizi sonrası
+
+172
+00:07:57,200 --> 00:08:00,400
+bir mevzuat eksikliği de vardı.
+
+173
+00:08:00,700 --> 00:08:03,040
+Yani orada kanunlar kurallar
+tekrar belirlendi.
+
+174
+00:08:03,280 --> 00:08:06,040
+Ama şimdi siz diyorsunuz ki burada
+bir mevzuat eksikliği yok.
+
+175
+00:08:06,480 --> 00:08:09,600
+Sorun asıl uygulanması yani
+liyakat o zaman
+
+176
+00:08:09,600 --> 00:08:12,380
+toparlanma da sandığımız kadar
+kolay
+
+177
+00:08:12,380 --> 00:08:15,400
+olmayabilir mi? Bu görüşe
+kesinlikle katılıyorum.
+
+178
+00:08:15,400 --> 00:08:18,380
+Şundan dolayı dünyada 2001
+
+179
+00:08:18,380 --> 00:08:21,340
+Amerika'daki krizden başlayarak
+
+180
+00:08:21,340 --> 00:08:23,640
+bugüne getirdim. IMF 'ye atıf
+yaptım.
+
+181
+00:08:24,300 --> 00:08:27,480
+Türkiye'de de sizin söylediğiniz
+Birleşik Fon Bankası
+
+182
+00:08:27,480 --> 00:08:30,380
+'na devredilen veya TMSF 'ye
+devredilen
+
+183
+00:08:30,380 --> 00:08:33,520
+ve bu ikisinin bir holding olduğu
+şeklinde
+
+184
+00:08:33,520 --> 00:08:34,760
+esprili bir yorum da var.
+
+185
+00:08:35,020 --> 00:08:37,180
+Birçok şirketin içerisinde olduğu.
+
+186
+00:08:38,880 --> 00:08:41,800
+2010 -2014 halkar seferberliğini
+de
+
+187
+00:08:41,800 --> 00:08:44,840
+izah ederken bana sosyal medyada
+şunu söylediler.
+
+188
+00:08:44,960 --> 00:08:48,040
+Dediler ki işte hocam 2010 -2014
+derken işte
+
+189
+00:08:48,040 --> 00:08:51,000
+bir 10 yıl 15 yıl geçmiş eski
+veri.
+
+190
+00:08:51,220 --> 00:08:54,320
+Ben de dedim ki finans yönetimin
+sonucudur.
+
+191
+00:08:54,320 --> 00:08:56,900
+Eğer yönetimde insanlar
+
+192
+00:08:56,900 --> 00:08:59,800
+irrasyonel kararlar almaya bilinç
+
+193
+00:08:59,800 --> 00:09:02,700
+dışı dürtüsel ve kültür dediğimiz
+sosyal
+
+194
+00:09:02,700 --> 00:09:05,460
+antropolojiden gelen yönetim
+danışmanlığına
+
+195
+00:09:05,460 --> 00:09:08,420
+tepkili işte akıl almak gibi çok
+
+196
+00:09:08,420 --> 00:09:11,220
+yanlış ifadelerle bunları
+kullandıklarında
+
+197
+00:09:11,220 --> 00:09:13,360
+finansal sonuçlar da değişmez.
+
+198
+00:09:13,360 --> 00:09:16,460
+Bunun yine bir testini yapalım
+deneysel yaklaşımla.
+
+199
+00:09:16,940 --> 00:09:19,420
+2010 -2014'teki az önce
+açıkladığım halkar
+
+200
+00:09:19,420 --> 00:09:22,020
+analizini 2024 -2025
+
+201
+00:09:22,020 --> 00:09:25,020
+yıllarında yaptığımızda %45 -55
+
+202
+00:09:25,020 --> 00:09:27,780
+aralığında şirketlerin yine
+endeksin
+
+203
+00:09:27,780 --> 00:09:30,880
+altında, enflasyonun altında ve
+bilanço
+
+204
+00:09:30,880 --> 00:09:34,040
+zararı açıklayan çok kötü bir
+performans ortaya
+
+205
+00:09:34,040 --> 00:09:37,200
+koyuluyor. Bakın tekrar söylüyorum
+bazıları bunu
+
+206
+00:09:37,200 --> 00:09:38,780
+makroekonomiye bağlayabiliyor.
+
+207
+00:09:39,020 --> 00:09:42,200
+Buna biz sistemik risk ve sistemik
+olmayan risk diyoruz.
+
+208
+00:09:42,200 --> 00:09:45,320
+Yani %50'si oysa %50'si de
+herhalde dediğiniz
+
+209
+00:09:45,320 --> 00:09:46,560
+değişkenler.
+
+210
+00:09:46,800 --> 00:09:48,390
+Yönetimin doğru yapılamaması.
+
+211
+00:09:48,820 --> 00:09:51,800
+Getiri sunmuş olabilir ama
+biliyorsunuz
+
+212
+00:09:51,800 --> 00:09:54,760
+finansal sürdürülebilir
+araştırmamda finansal
+
+213
+00:09:54,760 --> 00:09:55,940
+güvence alanı dediğim
+
+214
+00:09:55,940 --> 00:09:58,460
+diğerlerini çok
+
+215
+00:09:58,460 --> 00:10:00,340
+katlayarak artan bir
+
+216
+00:10:00,340 --> 00:10:03,460
+hisse performansı da iyi bir şey
+
+217
+00:10:03,460 --> 00:10:06,420
+değil. Ben bunu bu mevcut kriz,
+
+218
+00:10:06,820 --> 00:10:09,940
+SEMP piyasası krizi son iki
+haftadır,
+
+219
+00:10:10,000 --> 00:10:12,500
+üç haftadır tartışılan olmadan
+önce
+
+220
+00:10:12,500 --> 00:10:15,660
+13 kat, 31 kat çok
+
+221
+00:10:15,660 --> 00:10:18,420
+kısa sürede artan hisselerde
+söylediğimde
+
+222
+00:10:18,420 --> 00:10:21,120
+çok olumsuz
+
+223
+00:10:21,120 --> 00:10:22,740
+yorumlar çok gelmişti.
+
+224
+00:10:23,920 --> 00:10:26,440
+Peki şimdi İbrahim Hocam bizim
+
+225
+00:10:26,440 --> 00:10:29,440
+yani tüm dünyanın yatırım
+
+226
+00:10:29,440 --> 00:10:31,020
+ahlakı nasıl bozuldu?
+
+227
+00:10:31,220 --> 00:10:32,540
+Yani biz ne ara
+
+228
+00:10:32,540 --> 00:10:34,800
+yatırımla
+
+229
+00:10:34,800 --> 00:10:37,860
+böyle bir kumar oynar gibi çok
+
+230
+00:10:37,860 --> 00:10:40,980
+risk alıp parama bine katlayayım,
+yirmi bine katlayayım,
+
+231
+00:10:41,060 --> 00:10:43,140
+beş bine katlayayım gibi bir
+dürtüye geldik.
+
+232
+00:10:43,140 --> 00:10:44,640
+Yani enflasyon mu bunu tetikledi?
+
+233
+00:10:44,740 --> 00:10:46,760
+Dünyada da elbette çok yüksek
+enflasyon var.
+
+234
+00:10:47,700 --> 00:10:49,840
+Türkiye'de maalesef daha fazla
+var.
+
+235
+00:10:50,100 --> 00:10:52,040
+Ne dersiniz bu düşünceye?
+
+236
+00:10:52,820 --> 00:10:54,080
+Çok güzel bir soru.
+
+237
+00:10:54,140 --> 00:10:57,280
+Mümkün olan en basit, açık, net
+şekilde yanıtlamaya
+
+238
+00:10:57,280 --> 00:11:00,400
+çalışacağım. Makroekonomi boyutu
+daha
+
+239
+00:11:00,400 --> 00:11:02,980
+çok hükümetin ve uluslararası
+piyasaların
+
+240
+00:11:02,980 --> 00:11:06,020
+etkilediği, mikroekonomi ya da
+finansal ekonomi
+
+241
+00:11:06,020 --> 00:11:09,180
+dediğimizde, işte borsa gibi ya da
+ISO 500 gibi
+
+242
+00:11:09,180 --> 00:11:10,760
+daha çok büyük şirketlerin
+
+243
+00:11:10,760 --> 00:11:13,320
+oluşturduğu bir
+
+244
+00:11:13,320 --> 00:11:16,060
+yapı. Şimdi şirketlerin
+
+245
+00:11:16,060 --> 00:11:18,740
+aslında halka arzı ya da bir
+şekilde
+
+246
+00:11:18,740 --> 00:11:21,800
+bankadan kredi almak, tahvil veya
+
+247
+00:11:21,800 --> 00:11:24,400
+hisse senede ihracının temel
+mantığı şudur.
+
+248
+00:11:25,360 --> 00:11:28,060
+Sermaye piyasasının bir yıldan
+uzun vadeli olduğu
+
+249
+00:11:28,060 --> 00:11:30,460
+kitabi bilgisinin mantığı da
+şudur.
+
+250
+00:11:30,460 --> 00:11:32,260
+Bu sermayeyi alır,
+
+251
+00:11:32,740 --> 00:11:35,780
+makinelere yatırır, bir şekilde
+
+252
+00:11:35,780 --> 00:11:37,880
+o makinelarda üretim süresi,
+
+253
+00:11:38,240 --> 00:11:41,420
+lojistik, satış ve vadeden sonra
+
+254
+00:11:41,420 --> 00:11:44,500
+nakit olarak tekrar şirkete dönüşü
+
+255
+00:11:44,500 --> 00:11:45,920
+kabaca bir yıldır.
+
+256
+00:11:46,480 --> 00:11:48,700
+Ama bu düzen bozuldu.
+
+257
+00:11:49,160 --> 00:11:52,320
+Halka arzılarda izahnamelere
+bakarsanız, mevzuata
+
+258
+00:11:52,320 --> 00:11:54,600
+eklenen geçmiş dönemdeki
+borçlarını
+
+259
+00:11:54,600 --> 00:11:57,760
+kapatması da, halka arzdan elde
+edilen fonun
+
+260
+00:11:57,760 --> 00:12:00,920
+kullanım yeri olarak sayılması ve
+işletme
+
+261
+00:12:00,920 --> 00:12:04,000
+sermayesi ihtiyacı için
+kullanılacağı da
+
+262
+00:12:04,000 --> 00:12:06,880
+açıklandığında, %90 'ını
+
+263
+00:12:06,880 --> 00:12:10,060
+oluşturuyor. Bugün 2 ,5 milyar TL
+ile 4 ,5
+
+264
+00:12:10,060 --> 00:12:13,080
+milyar TL arasında halka arzdan
+fon
+
+265
+00:12:13,080 --> 00:12:16,000
+elde eden, %90 'ını geçmiş
+
+266
+00:12:16,000 --> 00:12:18,460
+borçlarına ve işletme sermayesine
+ayırıyor.
+
+267
+00:12:18,460 --> 00:12:20,880
+O zaman senin gerçek anlamda
+
+268
+00:12:20,880 --> 00:12:23,840
+sürdürülebilir büyüme ve
+
+269
+00:12:23,840 --> 00:12:26,480
+değer yaratma, bu
+
+270
+00:12:26,480 --> 00:12:29,580
+kavramların çok içi boşaltıldığı
+için ama ben bilimsel
+
+271
+00:12:29,580 --> 00:12:32,400
+karşılığıyla söylüyorum, değer
+yaratma,
+
+272
+00:12:32,560 --> 00:12:35,560
+bu özellikle de iç piyasayı
+doyurup, ihracata
+
+273
+00:12:35,560 --> 00:12:37,960
+yönelip döviz getirebileceğin ve
+
+274
+00:12:37,960 --> 00:12:41,120
+yatırımcılarına da hem değer
+artışı hem de
+
+275
+00:12:41,120 --> 00:12:44,280
+temettü, kar payı verebileceğin
+bir getiri
+
+276
+00:12:44,280 --> 00:12:46,040
+olmalı. Bu böyle olmuyor.
+
+277
+00:12:46,200 --> 00:12:48,540
+Bu tamamen şişirilmiş,
+
+278
+00:12:48,760 --> 00:12:50,220
+manipülatif,
+
+279
+00:12:50,440 --> 00:12:53,620
+hisse 10 kat, 30 kat, 50
+
+280
+00:12:53,620 --> 00:12:55,020
+kat artsın şeklinde.
+
+281
+00:12:55,200 --> 00:12:58,220
+İşte nerede bu kopma yaşandı
+
+282
+00:12:58,220 --> 00:13:01,360
+sorusunun cevabı bu. Türkiye'deki
+şirketler
+
+283
+00:13:01,360 --> 00:13:04,340
+ekonomik katma değer yaratamadığı
+
+284
+00:13:04,340 --> 00:13:07,360
+için iç piyasada birbirinin
+
+285
+00:13:07,360 --> 00:13:10,360
+elindekini çalıyor. Bu sıfır
+toplamlı oyun olarak da
+
+286
+00:13:10,360 --> 00:13:12,840
+açıklanabilir. Aslında sorunun özü
+bu.
+
+287
+00:13:12,840 --> 00:13:15,780
+Bundan nasıl çıkılır, çözüm nedir
+diye sorarsanız,
+
+288
+00:13:16,500 --> 00:13:19,380
+bizim toplumda çok sofistike
+geliyor,
+
+289
+00:13:19,640 --> 00:13:22,720
+küçümseniyor, aşağılanıyor ama
+bilim
+
+290
+00:13:22,720 --> 00:13:25,160
+dediğimiz şey aslında 2001 krizi
+
+291
+00:13:25,160 --> 00:13:28,180
+Amerika'daki olduğu gibi birikimli
+
+292
+00:13:28,180 --> 00:13:30,920
+olarak geçmişten gelen, yaşanmış,
+
+293
+00:13:31,080 --> 00:13:33,540
+denenmiş, görülmüş, neden sonuç
+ilişkileriyle
+
+294
+00:13:33,540 --> 00:13:35,660
+açıklanmış bir takım
+
+295
+00:13:35,660 --> 00:13:38,800
+finansın, yönetimin,
+sürdürülebilirliğin,
+
+296
+00:13:38,900 --> 00:13:41,900
+hukuk kurallarının hepsinin bir
+arada olduğu bir takım
+
+297
+00:13:41,900 --> 00:13:43,160
+tavsiyeler bütünü.
+
+298
+00:13:43,160 --> 00:13:46,340
+Sadece bilgi ve tavsiye vermek
+değil, biz bunu bazen
+
+299
+00:13:46,340 --> 00:13:48,840
+yönetim kurulu üyesi olarak, bazen
+de proje bazlı
+
+300
+00:13:48,840 --> 00:13:51,800
+finansal yönetim danışmanlığı
+projelerini de uygulayarak
+
+301
+00:13:51,800 --> 00:13:53,440
+yerine getiriyoruz. Aslında çözüm
+bu.
+
+302
+00:13:54,240 --> 00:13:57,080
+İbrahim Hocam maalesef bence
+yatırımcının da
+
+303
+00:13:57,080 --> 00:13:59,260
+patronların da hepsi değil tabii
+yani
+
+304
+00:13:59,260 --> 00:14:02,400
+bir işini iyi yapanları ya da
+
+305
+00:14:02,400 --> 00:14:04,980
+doğru düzgün yatırım alakalı
+olanları tenzih ediyorum.
+
+306
+00:14:06,620 --> 00:14:09,100
+Soyut kavramlarla bir kavgamız
+olduğumu düşünüyorum.
+
+307
+00:14:09,720 --> 00:14:12,620
+Yani şunu demeniz gerekiyor mesela
+sizin de gidip bir şirkete.
+
+308
+00:14:12,800 --> 00:14:15,380
+Ya ben senin karnını şu kadar
+arttıracağım, sen gel benden bu
+
+309
+00:14:15,380 --> 00:14:17,600
+danışmanlığa maliyetini şu kadar
+düşüreceğim.
+
+310
+00:14:18,080 --> 00:14:21,140
+Siz ona yönetişim dediğinizde,
+sürdürülebilirlik dediğinizde,
+
+311
+00:14:21,220 --> 00:14:24,180
+istikrar, şeffaflık dediğinizde
+non
+
+312
+00:14:24,180 --> 00:14:26,760
+-event onun için yani hiçbir
+etkisi yok yani çok önemli bir
+
+313
+00:14:26,760 --> 00:14:29,580
+manşet değil. Bir ara ilgilenirim
+diyor ama
+
+314
+00:14:29,580 --> 00:14:32,660
+sonra patladığında her şey yani o
+lastik öyle bir
+
+315
+00:14:32,660 --> 00:14:35,560
+patlıyor ki sonra yana yakıla onun
+nasıl
+
+316
+00:14:35,560 --> 00:14:38,660
+takacağını da bilmiyor. İşte bu
+sefer işte o danışmanlar
+
+317
+00:14:38,660 --> 00:14:41,440
+ya da artık kimden destek alacaksa
+yani hep diyoruz ya bu kriz
+
+318
+00:14:41,440 --> 00:14:44,340
+yönetiminde çok iyiyiz. Ya bu iyi
+bir meziyet değil ki arkadaşlar ya
+
+319
+00:14:44,340 --> 00:14:46,460
+biz niye sürekli bununla
+önlüküyoruz? Türkiye krizi çok
+
+320
+00:14:46,460 --> 00:14:47,780
+iyi. Krizi üstüne örtmede iyi
+olabiliriz belki.
+
+321
+00:14:48,500 --> 00:14:51,560
+Bir kere de önleyici olalım, bir
+kere de öyle önlemler almış
+
+322
+00:14:51,560 --> 00:14:53,560
+olalım ki bu kriz çatlak vermesin
+yani.
+
+323
+00:14:53,680 --> 00:14:56,840
+Biz Türkiye'de sürekli bir kriz
+yönetiminde iyiyiz pazarlıyoruz.
+
+324
+00:14:58,280 --> 00:15:00,380
+Güçlenerek çıkacağız diyenler
+görüyorum.
+
+325
+00:15:00,380 --> 00:15:03,020
+Evet ben de o yüzden sordum ya
+2001
+
+326
+00:15:03,020 --> 00:15:05,920
+bankacılık kriziyle karşılaştırıp
+ya sermaye
+
+327
+00:15:05,920 --> 00:15:08,780
+piyasaları dağıldı tam dağıldı ama
+artık güçlenerek çıkar
+
+328
+00:15:08,780 --> 00:15:10,660
+diyenler de var. Umarım öyle olur.
+
+329
+00:15:11,040 --> 00:15:14,000
+Yanıltıcı. Şimdi bakın deneyim
+kavramı
+
+330
+00:15:14,000 --> 00:15:16,820
+elinize ateşe sokarak deneyim
+kazanılır mı?
+
+331
+00:15:17,680 --> 00:15:20,820
+Bu ahmaklıktır. Ya
+
+332
+00:15:20,820 --> 00:15:23,280
+da siz 50 milyon dolarınızı gidip
+
+333
+00:15:23,280 --> 00:15:25,960
+çok riskli forex alanında bir yere
+
+334
+00:15:25,960 --> 00:15:28,320
+yatırarak bir deneyim kazanmak
+ister misiniz?
+
+335
+00:15:28,580 --> 00:15:31,340
+Hayır. Bunların zaten deneyimini
+kazanmış
+
+336
+00:15:31,340 --> 00:15:33,720
+uzmanlar var. Dolayısıyla
+
+337
+00:15:33,720 --> 00:15:36,840
+uzmanlık satın alması şeklinde de
+o
+
+338
+00:15:36,840 --> 00:15:39,840
+deneyim kazanılabilir. Bu daha
+kısa süreli en
+
+339
+00:15:39,840 --> 00:15:42,500
+düşük riskli ve yasal güvence de
+sunan bir
+
+340
+00:15:42,500 --> 00:15:45,540
+çözüm. Peki programın son
+
+341
+00:15:45,540 --> 00:15:48,180
+5 -6 dakikasında ben biraz güncel
+
+342
+00:15:48,180 --> 00:15:51,080
+piyasalardaki beklentilere
+getirmek istiyorum.
+
+343
+00:15:51,240 --> 00:15:54,400
+Şimdi Merkez Bankası 'nın ekim
+
+344
+00:15:54,400 --> 00:15:57,440
+faiz kararında 100 bas puandan
+
+345
+00:15:57,440 --> 00:15:59,480
+daha fazla bir indirim
+yapabileceği konuşuluyor.
+
+346
+00:15:59,760 --> 00:16:02,480
+Bunun sebebi de yani piyasa kendi
+kendine zaten çok
+
+347
+00:16:02,480 --> 00:16:05,380
+sıkıştı ve talepte çok
+
+348
+00:16:05,380 --> 00:16:06,820
+sert bir daralma olacak.
+
+349
+00:16:06,820 --> 00:16:09,740
+O yüzden de 100 bas puanlık bir
+faiz indirimi yeterli
+
+350
+00:16:09,740 --> 00:16:12,760
+olmaz. Çünkü bu fon krizini aştı
+ve likit de
+
+351
+00:16:12,760 --> 00:16:15,320
+krizi oldu deniliyor. Bir kısmına
+katılıyorum.
+
+352
+00:16:15,460 --> 00:16:17,140
+Bu hafta ben de bir
+konferanstaydım.
+
+353
+00:16:17,220 --> 00:16:19,960
+Zincir Mağazalar Derneği 'nin
+orada bütün büyük parakende
+
+354
+00:16:19,960 --> 00:16:23,140
+zincirlerinin işte patronları ile
+CEO 'lar ile CEO 'lar ile konuşma
+
+355
+00:16:23,140 --> 00:16:26,280
+fırsatım oldu. Güzen Hanım
+sandığınızdan biraz daha
+
+356
+00:16:26,280 --> 00:16:28,420
+agresif gelecek talepler alması
+dediler.
+
+357
+00:16:28,500 --> 00:16:30,100
+Yani Eylül son haftayı görmüşler.
+
+358
+00:16:30,240 --> 00:16:33,300
+Keza Ekim için de büyük market
+zincirleri aynı şeyi söyledi.
+
+359
+00:16:33,380 --> 00:16:36,160
+Tekstil tarafı, teknoloji
+parakendesi aynı şeyi söyledi.
+
+360
+00:16:37,080 --> 00:16:40,160
+İnsanlarda bir yani ne olacağı
+belli değil şu an bir şey
+
+361
+00:16:40,160 --> 00:16:41,620
+harcamayayım psikolojisi var.
+
+362
+00:16:42,000 --> 00:16:43,660
+Bu da tüketimi çok törpüleyebilir.
+
+363
+00:16:43,860 --> 00:16:47,000
+Ama gerçekten yani eksi enflasyon
+
+364
+00:16:47,000 --> 00:16:48,460
+gelecek değil ya herhalde Ekim
+ayında.
+
+365
+00:16:48,680 --> 00:16:51,760
+Ya da merkeze 200 bas puanlık faiz
+indirimi yapacak
+
+366
+00:16:51,760 --> 00:16:52,700
+yaraşacak mı sizce?
+
+367
+00:16:54,920 --> 00:16:57,940
+Açmalı mı? Bu görüşlere
+katılıyorum.
+
+368
+00:16:58,280 --> 00:17:00,840
+Şimdi ben faiz konusunda hep şunu
+söylüyorum.
+
+369
+00:17:01,000 --> 00:17:04,140
+Gösterge faiz aslında kısa
+
+370
+00:17:04,140 --> 00:17:07,280
+vadeli bir çözüm. Faizi
+
+371
+00:17:07,280 --> 00:17:09,960
+indirmek ya da arttırmak o kısa
+vadeli
+
+372
+00:17:09,960 --> 00:17:13,100
+yapısal sorunları hızlıca çözmek
+ve yol
+
+373
+00:17:13,100 --> 00:17:16,260
+almak için bir yöntem. Ama
+Türkiye'de bu son
+
+374
+00:17:16,260 --> 00:17:19,420
+25 yılda çoktan bu amaca aşmış bir
+durumda.
+
+375
+00:17:19,580 --> 00:17:21,780
+Ve o açıdan ben açıkçası
+
+376
+00:17:21,780 --> 00:17:24,440
+faizi indirmenin ya da arttırmanın
+
+377
+00:17:24,440 --> 00:17:27,540
+spekülatif etkisi dışında makro
+ekonomide
+
+378
+00:17:27,540 --> 00:17:29,280
+bir öneminin olmadığını
+düşünüyorum.
+
+379
+00:17:29,280 --> 00:17:32,300
+Artık? Evet çünkü bu amacına uygun
+
+380
+00:17:32,300 --> 00:17:35,420
+kullanılmıyor. Yani kanser olan
+bir hastaya
+
+381
+00:17:35,420 --> 00:17:37,080
+ağrı kesici veriliyor sürekli.
+
+382
+00:17:37,320 --> 00:17:38,840
+Bu böyle olmaz.
+
+383
+00:17:39,920 --> 00:17:42,960
+Diğer taraftan da Türkiye'de
+
+384
+00:17:42,960 --> 00:17:45,500
+kurumsal finansmana erişim sorunu
+hep
+
+385
+00:17:45,500 --> 00:17:46,800
+dillendirilirdi.
+
+386
+00:17:47,520 --> 00:17:49,980
+Patronların da bakanlarla bizim
+olduğumuz
+
+387
+00:17:49,980 --> 00:17:52,960
+toplantılarda hep faizsiz kredi,
+vergi
+
+388
+00:17:52,960 --> 00:17:55,760
+teşviki, asgari ücret güvencesi ve
+dövizin
+
+389
+00:17:55,760 --> 00:17:57,040
+artması talepleri var.
+
+390
+00:17:57,040 --> 00:18:00,140
+Bir bakanın olduğu bu
+toplantılardan
+
+391
+00:18:00,140 --> 00:18:03,220
+birisinde çay servisi yapılıyordu.
+
+392
+00:18:03,560 --> 00:18:06,140
+Dedim ki bu kadar taleplerinizi bu
+çay servisi yapan
+
+393
+00:18:06,140 --> 00:18:08,900
+beyefendiye de versek o da holding
+sahibi olur dedim.
+
+394
+00:18:09,360 --> 00:18:11,960
+Patronlar biraz bozuldu, bakan da
+biraz gülmüştü.
+
+395
+00:18:12,080 --> 00:18:15,120
+Ama gerçekten bir iş adamı olmak
+aslında bu
+
+396
+00:18:15,120 --> 00:18:17,820
+kadar devlet teşvikini almakla
+değil,
+
+397
+00:18:18,040 --> 00:18:21,160
+az önce konuştuğumuz kısımlarla
+olur ama bu kurumsal
+
+398
+00:18:21,160 --> 00:18:24,100
+finansmana erişim sorunu şu an
+yaklaşık yarım
+
+399
+00:18:24,100 --> 00:18:27,140
+milyonluk fon yatırımcısı ve
+hisseleri de
+
+400
+00:18:27,140 --> 00:18:30,180
+etkilediği için bunun yaklaşık 1
+,5 -2 milyon
+
+401
+00:18:30,180 --> 00:18:33,300
+kişi üzerinden bireysel anlamda da
+
+402
+00:18:33,300 --> 00:18:36,280
+bir nakit ve harcama sorununa
+
+403
+00:18:36,280 --> 00:18:38,280
+dönüştüğünü görüyorum. Ve bunun
+
+404
+00:18:38,280 --> 00:18:41,140
+mutlaka davalar açılarak
+
+405
+00:18:41,140 --> 00:18:44,300
+takip edilmesi, uzman görüşü,
+bilirkişi raporu
+
+406
+00:18:44,300 --> 00:18:46,540
+eklenerek olması gerektiğini
+düşünüyorum.
+
+407
+00:18:46,700 --> 00:18:49,400
+Ve bunun etkilerinin yıllarca
+süreceğini de düşünüyorum.
+
+408
+00:18:50,420 --> 00:18:52,940
+Şirketlerde olduğu gibi bireysel
+
+409
+00:18:52,940 --> 00:18:55,680
+vatandaşlarda da işte kirasını
+ödeme,
+
+410
+00:18:55,860 --> 00:18:58,920
+kredi kartını ödeme ya da ufak
+harcamaları
+
+411
+00:18:58,920 --> 00:19:01,660
+konusunda bir daralmaya yol
+açacağını düşünüyorum.
+
+412
+00:19:02,160 --> 00:19:05,340
+Peki işin faiz boyutunun bir
+
+413
+00:19:05,340 --> 00:19:08,400
+diğer tarafı da yani enflasyon
+kadar yani fiyat istikrar kadar
+
+414
+00:19:08,400 --> 00:19:09,740
+finansal istikrar da önemli.
+
+415
+00:19:09,740 --> 00:19:12,580
+Orada da kurun oynaklığı,
+
+416
+00:19:12,940 --> 00:19:14,360
+rezervler yeterli mi?
+
+417
+00:19:14,600 --> 00:19:16,500
+Yabancı zaten küstü gitti.
+
+418
+00:19:16,920 --> 00:19:19,880
+Biz işte döviz pozisyonuna
+bakıldığında bunu nasıl
+
+419
+00:19:19,880 --> 00:19:22,720
+finanse edeceğiz? Cari açıklar,
+riskler artıyor enerjiden
+
+420
+00:19:22,720 --> 00:19:24,120
+dolayı. Uzatmayayım.
+
+421
+00:19:24,260 --> 00:19:27,240
+Şöyle alt alta koyduğunuzda
+ülkenin döviz gelirleri, döviz
+
+422
+00:19:27,240 --> 00:19:30,020
+giderleri. Bir de biz bunun
+üzerine
+
+423
+00:19:30,020 --> 00:19:33,160
+yeterli faiz vermezsek, Türk
+lirasından
+
+424
+00:19:33,160 --> 00:19:36,260
+soğutursak yatırımcıya ki para
+piyasası fonlarından maalesef
+
+425
+00:19:36,260 --> 00:19:38,880
+soğuttuk. TL mevduattan da
+soğutursak.
+
+426
+00:19:38,940 --> 00:19:41,860
+Bir de onlar gidip dolar altını
+alırsa o zaman
+
+427
+00:19:41,860 --> 00:19:44,960
+nasıl karşılayacağız? Petrolü mü
+karşılayalım, vatandaşın aldığı
+
+428
+00:19:44,960 --> 00:19:48,000
+doları mı, vatandaşın aldığı
+altını mı, yabancı çıkıyor
+
+429
+00:19:48,000 --> 00:19:49,680
+gidiyor, onun parasını mı
+ödeyeyim?
+
+430
+00:19:49,760 --> 00:19:52,580
+Merkez Bankası bu rezervle hangi
+birini karşılayacak?
+
+431
+00:19:52,760 --> 00:19:55,880
+Az önce söylediğimiz, konuştuğumuz
+şirketler
+
+432
+00:19:55,880 --> 00:19:58,320
+finansal ekonomiyi oluştururken
+
+433
+00:19:58,320 --> 00:20:00,640
+katma değer üretemiyorlar.
+
+434
+00:20:00,940 --> 00:20:03,800
+Bunu klasik iktisat teorisi mal ve
+hizmet
+
+435
+00:20:03,800 --> 00:20:06,680
+üreterek bir ihtiyacı karşılama
+kısmında da
+
+436
+00:20:06,680 --> 00:20:07,980
+yapmada yetersizler.
+
+437
+00:20:07,980 --> 00:20:10,960
+Tekerleşmiş sektörler var
+biliyorsunuz.
+
+438
+00:20:11,060 --> 00:20:13,960
+Dünyanın en yüksek fiyatına, en
+kalitesiz ürünlerini
+
+439
+00:20:13,960 --> 00:20:15,780
+satıyorlar ve vatandaş çaresiz.
+
+440
+00:20:15,960 --> 00:20:17,560
+Başka bir alternatifi yok.
+
+441
+00:20:17,960 --> 00:20:20,480
+Ya da ekonomik katma değer de
+yaratamıyorlar.
+
+442
+00:20:20,940 --> 00:20:23,700
+Bundan dolayı işte Concorda'da ve
+iflastan
+
+443
+00:20:23,700 --> 00:20:26,700
+bir adım öncesinde halka arzı
+deneyenler var.
+
+444
+00:20:27,020 --> 00:20:30,120
+Orada da halka arzıdan elde ettiği
+fonu ya
+
+445
+00:20:30,120 --> 00:20:33,060
+borca işletme sermesine ya da
+bankaya vadeli
+
+446
+00:20:33,060 --> 00:20:35,700
+mevduata yatırıp faiz geliri
+
+447
+00:20:35,700 --> 00:20:38,680
+alanlar var. Bütün bunları
+yapmalarına rağmen
+
+448
+00:20:38,680 --> 00:20:41,620
+yine de Concorda'da iflas
+açıklanan şirketler de var.
+
+449
+00:20:41,900 --> 00:20:44,080
+Dolayısıyla ülkedeki temel sorun
+
+450
+00:20:44,080 --> 00:20:47,060
+şirketlerin ekonomik katma değer
+yaratamaması.
+
+451
+00:20:47,380 --> 00:20:50,480
+Bunu yapamadıkları için şirketler
+de tıpkı vatandaşlar
+
+452
+00:20:50,480 --> 00:20:53,520
+gibi dövize mi gireyim, kriptoya
+mı gireyim,
+
+453
+00:20:53,820 --> 00:20:56,840
+işte fon mu olsun? Hatta esprili
+bir
+
+454
+00:20:56,840 --> 00:20:58,800
+şekilde trajikomik de diyebiliriz.
+
+455
+00:20:58,800 --> 00:21:01,140
+Bu fonzedelerden bir tanesi
+
+456
+00:21:01,140 --> 00:21:04,220
+yakında yok mu şöyle 10 kat falan
+artacak
+
+457
+00:21:04,220 --> 00:21:07,280
+hemen patlamadan önce satalım da
+çıkalım diye artık
+
+458
+00:21:07,280 --> 00:21:09,420
+mizah mı dersiniz, kara mizah mı
+bilmiyorum.
+
+459
+00:21:10,160 --> 00:21:12,740
+İnsanlar bu tip kestirme
+yöntemlere
+
+460
+00:21:12,740 --> 00:21:15,320
+bile isteye, çaresizlikle girdiği
+gibi
+
+461
+00:21:15,320 --> 00:21:18,140
+büyük şirketler de aynı yolları
+seçiyorlar.
+
+462
+00:21:18,140 --> 00:21:20,340
+Geçen hafta kuyumculuk fuarı
+vardı.
+
+463
+00:21:20,560 --> 00:21:23,100
+Ülkenin en büyük kuyumculuk
+şirketlerinin patronlarıyla
+
+464
+00:21:23,100 --> 00:21:25,780
+görüştüğümde bu bir dostane
+sohbet,
+
+465
+00:21:26,760 --> 00:21:29,080
+bir yönetim danışmanlığı
+pazarlaması falan değil.
+
+466
+00:21:29,580 --> 00:21:32,740
+Onların da bazı fonla ilgili
+mağduriyetleri olmuş.
+
+467
+00:21:32,980 --> 00:21:36,120
+Ve konuştuğumuzda bana şunu
+söylüyorlar, hepsi ağız birliği
+
+468
+00:21:36,120 --> 00:21:38,680
+yapmış gibi, Hocam bizim sektör
+kayıt dışı.
+
+469
+00:21:39,060 --> 00:21:42,000
+Bundan anlayacağınız şey şu ki,
+finansal yönetim
+
+470
+00:21:42,000 --> 00:21:45,000
+danışmanlığı dediğimiz temeli mali
+hukuk olan, bilim,
+
+471
+00:21:45,080 --> 00:21:47,860
+liyakat, uygulama ve katma değer
+yaratma olan, işte
+
+472
+00:21:47,860 --> 00:21:50,600
+küresel marka yaratma, ihracat
+odaklı olma
+
+473
+00:21:50,600 --> 00:21:53,600
+konusunda özellikle kuyumculuk
+sektörü,
+
+474
+00:21:53,720 --> 00:21:56,540
+biz kayıt dışıyız, ihtiyacımız yok
+diyorlar.
+
+475
+00:21:56,760 --> 00:21:59,240
+Buradan siz çıkarım
+yapabilirsiniz.
+
+476
+00:21:59,580 --> 00:22:02,020
+Fazla kara mizah hocam bu
+gerçekten öyle.
+
+477
+00:22:02,020 --> 00:22:04,640
+Çok teşekkür ediyorum değerli
+katkılarınız için aslında
+
+478
+00:22:04,640 --> 00:22:06,860
+bizim için ufuk açıcı bir sohbet
+oldu.
+
+479
+00:22:06,960 --> 00:22:09,260
+Çünkü hep biz böyle piyasanın
+içinden piyasayla ilgili
+
+480
+00:22:09,260 --> 00:22:12,180
+sohbetleri ederken, hep böyle
+borsa
+
+481
+00:22:12,180 --> 00:22:14,000
+işte kur üzerine gidiyorduk.
+
+482
+00:22:14,100 --> 00:22:17,180
+Ama toplu bir, yani topyekun bir
+ülkenin
+
+483
+00:22:17,180 --> 00:22:19,620
+ileriye gitmesi, istihdam
+yaratması, hepimizin refaha
+
+484
+00:22:19,620 --> 00:22:22,520
+ulaşması için, bizi yönetenlerin
+de, şirket
+
+485
+00:22:22,520 --> 00:22:25,580
+patronlarının da komple bir
+yenilenmesi
+
+486
+00:22:25,580 --> 00:22:27,900
+gerekiyor. Kafa olarak da
+şirketlerin de temizlemeleri
+
+487
+00:22:27,900 --> 00:22:30,620
+gerekiyor. Kamunun da tek başına
+yapacağı iş değil bu.
+
+488
+00:22:30,620 --> 00:22:33,060
+İşte diyoruz yani yatırımın ahlakı
+burada başlıyor.
+
+489
+00:22:33,180 --> 00:22:35,380
+Buna dair çok önemli tespitleriniz
+vardı.
+
+490
+00:22:35,460 --> 00:22:37,000
+Tekrar çok teşekkür ediyorum
+katıldığınız için.
+
+491
+00:22:37,000 --> 00:22:40,100
+Ben teşekkür ederim. Finansal
+yönetim danışmanı Dr.
+
+492
+00:22:40,280 --> 00:22:42,520
+İbrahim Can 'ı ağırladık açık açık
+programında.
+
+493
+00:22:42,760 --> 00:22:44,360
+Bizi dinlediğiniz için teşekkür
+ediyoruz.
+
+494
+00:22:44,440 --> 00:22:44,960
+Hoşçakalın.
+
