@@ -281,6 +281,22 @@ def kesit(is_, src: Path, cikti: Path):
     shutil.rmtree(tmp, ignore_errors=True)
 
 
+def sahne(is_, src: Path, cikti: Path):
+    """Sahne geçişlerini bulur; her geçişten 0.5 sn sonrası için bir kare çıkarır."""
+    cikti.mkdir(parents=True, exist_ok=True)
+    esik = float(is_.get("sahne_esik", 0.3))
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(src), "-vf",
+                        f"scale=320:-2,select='gt(scene,{esik})',showinfo", "-an", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    zamanlar = [float(m) for m in re.findall(r"pts_time:([0-9.]+)", r.stderr)]
+    (cikti / "sahneler.txt").write_text("\n".join(f"{t:.2f}" for t in zamanlar) + "\n")
+    d = cikti / "sahne_kareleri"
+    d.mkdir(exist_ok=True)
+    for t in [0.0] + zamanlar[:80]:
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", t + 0.5, "-i", src, "-frames:v", "1",
+            "-vf", "scale=960:-2", "-q:v", "4", d / f"s_{t:07.2f}.jpg"])
+
+
 def transkript(is_, src: Path, cikti: Path):
     """Tüm yayının kelime zamanlı transkripti (mutlak zaman) + düzen taraması için kareler."""
     cikti.mkdir(parents=True, exist_ok=True)
@@ -330,6 +346,8 @@ def main():
         kareler(is_, src, cikti)
     elif mod == "transkript":
         transkript(is_, src, cikti)
+    elif mod == "sahne":
+        sahne(is_, src, cikti)
     else:
         kesit(is_, src, cikti)
 

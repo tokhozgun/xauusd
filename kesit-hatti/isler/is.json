@@ -1,6 +1,6 @@
 {
-  "ad": "acik-acik-ibrahim-can-transkript",
-  "mod": "transkript",
+  "ad": "acik-acik-ibrahim-can-sahne",
+  "mod": "sahne",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
     "yedek_url": "https://storage.googleapis.com/vidiq-user-videos/cfd80361-1f46-462d-a5f4-6425727d9d25/56a3e50a-1c61-4d6e-b656-4917cd4dedaa.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1794083838&Signature=Gft%2Fa5W%2BWxlfw38cMnpqkr%2FvKbpHUTPquCYNfEXIbbyzaVF5iWxKwoWgrvGoBIjH0%2BvKTKbJ%2BW3sFPfq5PUWB2L%2FmqVFdaJJJPgKLcVMlyfOVt%2Fxfbfjm6%2B6ZRvr9CuyOZ5AFZgEBBETvIed3nizQrIOGz83pPZhrZT%2B9m%2Fp1aixMk6BCLL5OauAeBvNbIFQNv37FD4s32%2F26Fm%2F8qr%2FUIc2bnVfic5ZzObY52DLeCV00%2FW0SIsDkBX3K5EK02%2FEipNgwtEWWE%2Bmaa8OLulAxJslxDzTY8f8mEynl7ZDDk18anB6tNjbuPWATlTz6Uh9utT0T5GwBPt99Nsx%2FE39NQ%3D%3D"
@@ -33,5 +33,6 @@
     "font": "Inter SemiBold",
     "punto": 52
   },
-  "tarama_adim": 10
+  "tarama_adim": 10,
+  "sahne_esik": 0.3
 }
