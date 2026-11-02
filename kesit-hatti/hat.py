@@ -252,6 +252,13 @@ def sessizlige_hizala(src, bas, son):
         sessiz = db < esik
         # kelimeye en yakın sessiz pencereyi bul (sondan geriye)
         idx = [i for i in range(len(db) - 1, -1, -1) if sessiz[i]]
+        bitisik = (not idx) or ((len(db) - 1 - idx[0]) * p > 0.18)
+        if bitisik:
+            # önceki kelime bitişik: kelimeler arası ses vadisine kes (bas-0.20 .. bas+0.04 aralığında en düşük enerji)
+            i0, i1 = int((ara0 - 0.20) / p), min(len(db), int((ara0 + 0.04) / p))
+            if i1 > i0:
+                yeni_bas = (bas - ara0) + (i0 + int(np.argmin(db[i0:i1]))) * p
+            idx = []
         if idx:
             yeni_bas = (bas - ara0) + idx[0] * p - 0.02
             yeni_bas = min(yeni_bas, bas - 0.10)
@@ -288,7 +295,7 @@ def hareket_egrisi(src, t0, t1, fps=30):
     w, h = 160, 90
     r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t0:.3f}", "-t", f"{t1 - t0:.3f}", "-i", str(src),
                         "-vf", f"fps={fps},scale={w}:{h},format=gray", "-f", "rawvideo", "-"],
-                       capture_output=True, check=True)
+                       capture_output=True, check=False)
     k = len(r.stdout) // (w * h)
     if k < 3:
         return np.array([]), 1 / fps
@@ -303,8 +310,13 @@ def dogal_bitis(src, son):
     sinir = sonraki_konusma(src, son, 2.0) - 0.12
     en_erken = son + 0.45
     en_gec = min(son + 1.6, sinir)
-    if en_gec <= en_erken:  # karşı taraf hemen giriyorsa kısa kuyruk, kapanışı fade taşır
-        return max(son + 0.2, min(sinir, son + 0.45))
+    if en_gec <= en_erken:  # karşı taraf hemen giriyor: sonraki kelimeye taşmadan, kelimeler arası vadiye kes
+        import numpy as np
+        db, p = ses_enerjisi(src, son - 0.06, 0.40)
+        if len(db):
+            ust = max(1, min(len(db), int((sinir + 0.12 - (son - 0.06)) / p)))
+            return son - 0.06 + int(np.argmin(db[:ust])) * p + 0.01
+        return son + 0.04
     hz, adim = hareket_egrisi(src, son, en_gec + 0.05)
     if not len(hz):
         return en_erken
@@ -483,7 +495,7 @@ def film(is_, src: Path, cikti: Path):
             k = {"id": f"{f['id']}p{i + 1:02d}", "ad": "parca", "bas": p["bas"], "son": p["son"],
                  "kelimeler": is_["kelimeler"], "duzeltmeler": is_.get("duzeltmeler")}
             giris = 0.15 if i == 0 else 0.06
-            cikis = 0.40 if i == n - 1 else 0.18
+            cikis = 0.40 if i == n - 1 else 0.10
             y, r, _ = kesit_uret(is_, k, src, parca_dir, ctx, giris, cikis,
                                  baslik=f.get("baslik") if i == 0 else None)
             yataylar.append(y)
