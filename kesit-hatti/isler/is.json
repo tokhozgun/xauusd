@@ -1,5 +1,5 @@
 {
-  "ad": "film-F2-v4",
+  "ad": "film-F3-v2",
   "mod": "film",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -149,28 +149,28 @@
   ],
   "adimlar": [
     {
-      "ad": "film-F2-kural-var-uygulama-yok-v4",
+      "ad": "film-F3-danisman-kimdir-v2",
       "mod": "film",
       "filmler": [
         {
-          "id": "F2",
-          "ad": "kural-var-uygulama-yok",
-          "baslik": "Kural Var, Uygulama Yok",
+          "id": "F3",
+          "ad": "danisman-kimdir",
+          "baslik": "Danışman Kimdir?",
           "parcalar": [
             {
-              "bas": 151.12,
-              "son": 187.94,
-              "metin": "Bu kadar denetim, gözetim, eğitimli, donanımlı, lisanslı, yüksek tahsilli kişi varsa, 2010-2014 yıllarında 117 şirketin 17'si iflas ve %76'sı ciddi bir negatif performans nasıl sergiler? Bu bize çok somut olarak şu gerçeği ortaya koyuyor. Mevcut düzenlemeler, ilgili mali mevzuat yeterli olmakla birlikte bunun yönetim bilimleri ve ilgili olan finans, sürdürülebilirlik, mali hukuk gibi dallar yeterince uygulanmıyor."
+              "bas": 911.88,
+              "son": 943.48,
+              "metin": "Şimdi bakın deneyim kavramı elinizi ateşe sokarak deneyim kazanılır mı? … uzmanlık satın alması … çözüm."
             },
             {
-              "bas": 483.28,
-              "son": 495.4,
-              "metin": "Ama şimdi siz diyorsunuz ki burada bir mevzuat eksikliği yok. Sorun asıl uygulanması yani liyakat o zaman toparlanma da sandığımız kadar kolay olmayabilir mi? Bu görüşe kesinlikle katılıyorum."
+              "bas": 212.42,
+              "son": 252.06,
+              "metin": "Aslında piyasada danışman diye … hukuk dediğimiz şey devreye giriyor."
             },
             {
-              "bas": 531.22,
-              "son": 553.36,
-              "metin": "Ben de dedim ki finans yönetimin sonucudur. Eğer yönetimde insanlar irrasyonel kararlar almaya bilinç dışı dürtüsel ve kültür dediğimiz sosyal antropolojiden gelen yönetim danışmanlığına tepkili işte akıl almak gibi çok yanlış ifadelerle bunları kullandıklarında finansal sonuçlar da değişmez."
+              "bas": 823.16,
+              "son": 833.44,
+              "metin": "Sadece bilgi ve tavsiye vermek değil … Aslında çözüm bu."
             }
           ]
         }
