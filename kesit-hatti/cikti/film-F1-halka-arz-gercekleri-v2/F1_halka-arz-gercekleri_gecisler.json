@@ -1,0 +1,37 @@
+[
+ {
+  "parca": 1,
+  "film_bas": 0.0,
+  "film_son": 27.687,
+  "kaynak_bas": 86.34,
+  "kaynak_son": 113.36
+ },
+ {
+  "parca": 2,
+  "film_bas": 27.687,
+  "film_son": 45.767,
+  "kaynak_bas": 556.94,
+  "kaynak_son": 574.54
+ },
+ {
+  "parca": 3,
+  "film_bas": 45.767,
+  "film_son": 56.787,
+  "kaynak_bas": 727.88,
+  "kaynak_son": 738.46
+ },
+ {
+  "parca": 4,
+  "film_bas": 56.787,
+  "film_son": 69.294,
+  "kaynak_bas": 591.8,
+  "kaynak_son": 603.74
+ },
+ {
+  "parca": 5,
+  "film_bas": 69.294,
+  "film_son": 89.274,
+  "kaynak_bas": 1222.14,
+  "kaynak_son": 1241.62
+ }
+]
