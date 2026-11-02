@@ -50,7 +50,8 @@ def main():
         orta = int(1.2 / p)
         once, sonra = db[:orta], db[orta:]
         # önceki parçanın sonundaki sessizlik (son kelimeden sonra ne kadar boşluk var)
-        esik = -40
+        taban = float(np.percentile(db, 10))
+        esik = max(-40.0, taban + 10)  # oda gürültüsünün 10 dB üstü = konuşma
         son_ses = max([i for i in range(len(once)) if once[i] > esik], default=-1)
         kuyruk = (len(once) - 1 - son_ses) * p if son_ses >= 0 else None
         ilk_ses = min([i for i in range(len(sonra)) if sonra[i] > esik], default=None)

@@ -1,5 +1,5 @@
 {
-  "ad": "film-F2-v3",
+  "ad": "film-F2-v4",
   "mod": "film",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -149,7 +149,7 @@
   ],
   "adimlar": [
     {
-      "ad": "film-F2-kural-var-uygulama-yok-v3",
+      "ad": "film-F2-kural-var-uygulama-yok-v4",
       "mod": "film",
       "filmler": [
         {
@@ -163,9 +163,9 @@
               "metin": "Bu kadar denetim, gözetim, eğitimli, donanımlı, lisanslı, yüksek tahsilli kişi varsa, 2010-2014 yıllarında 117 şirketin 17'si iflas ve %76'sı ciddi bir negatif performans nasıl sergiler? Bu bize çok somut olarak şu gerçeği ortaya koyuyor. Mevcut düzenlemeler, ilgili mali mevzuat yeterli olmakla birlikte bunun yönetim bilimleri ve ilgili olan finans, sürdürülebilirlik, mali hukuk gibi dallar yeterince uygulanmıyor."
             },
             {
-              "bas": 483.72,
+              "bas": 483.28,
               "son": 495.4,
-              "metin": "siz diyorsunuz ki burada bir mevzuat eksikliği yok. Sorun asıl uygulanması yani liyakat o zaman toparlanma da sandığımız kadar kolay olmayabilir mi? Bu görüşe kesinlikle katılıyorum."
+              "metin": "Ama şimdi siz diyorsunuz ki burada bir mevzuat eksikliği yok. Sorun asıl uygulanması yani liyakat o zaman toparlanma da sandığımız kadar kolay olmayabilir mi? Bu görüşe kesinlikle katılıyorum."
             },
             {
               "bas": 531.22,
