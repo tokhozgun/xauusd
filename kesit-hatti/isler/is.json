@@ -1,5 +1,5 @@
 {
-  "ad": "film-F2-v5",
+  "ad": "filmler-F4-F7-v2",
   "mod": "film",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -149,25 +149,108 @@
   ],
   "adimlar": [
     {
-      "ad": "film-F2-kural-var-uygulama-yok-v5",
+      "ad": "film-F4-bilirkisilik-ve-fon-krizi-v2",
       "mod": "film",
       "filmler": [
         {
-          "id": "F2",
-          "ad": "kural-var-uygulama-yok",
-          "baslik": "Kural Var, Uygulama Yok",
+          "id": "F4",
+          "ad": "bilirkisilik-ve-fon-krizi",
+          "baslik": "Fon Krizi ve Bilirkişilik",
           "parcalar": [
             {
-              "bas": 151.12,
-              "son": 187.94
+              "bas": 1100.66,
+              "son": 1117.36
             },
             {
-              "bas": 483.28,
-              "son": 495.4
+              "bas": 382.44,
+              "son": 429.12
             },
             {
-              "bas": 518.88,
-              "son": 553.36
+              "bas": 1117.56,
+              "son": 1129.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "film-F5-krizler-tekrar-ediyor-v2",
+      "mod": "film",
+      "filmler": [
+        {
+          "id": "F5",
+          "ad": "krizler-tekrar-ediyor",
+          "baslik": "Krizler Tekrar Ediyor",
+          "parcalar": [
+            {
+              "bas": 344.9,
+              "son": 358.04
+            },
+            {
+              "bas": 276.94,
+              "son": 327.42
+            },
+            {
+              "bas": 880.62,
+              "son": 893.56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "film-F6-faiz-agri-kesici-v2",
+      "mod": "film",
+      "filmler": [
+        {
+          "id": "F6",
+          "ad": "faiz-agri-kesici",
+          "baslik": "Faiz: Ağrı Kesici",
+          "parcalar": [
+            {
+              "bas": 1053.6,
+              "son": 1058.84
+            },
+            {
+              "bas": 1021.0,
+              "son": 1049.28
+            },
+            {
+              "bas": 975.46,
+              "son": 1003.66
+            },
+            {
+              "bas": 1067.52,
+              "son": 1099.92
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "film-F7-katma-deger-yok-v2",
+      "mod": "film",
+      "filmler": [
+        {
+          "id": "F7",
+          "ad": "katma-deger-yok",
+          "baslik": "Katma Değer Yok",
+          "parcalar": [
+            {
+              "bas": 779.88,
+              "son": 791.02
+            },
+            {
+              "bas": 1207.98,
+              "son": 1217.56
+            },
+            {
+              "bas": 1241.9,
+              "son": 1254.96
+            },
+            {
+              "bas": 1270.16,
+              "son": 1319.24
             }
           ]
         }
