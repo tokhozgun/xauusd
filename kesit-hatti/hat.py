@@ -473,7 +473,7 @@ def film(is_, src: Path, cikti: Path):
     for f in is_["filmler"]:
         ad = f"{f['id']}_{f['ad']}"
         print(f"\n##### FİLM {ad}: {len(f['parcalar'])} parça", flush=True)
-        yataylar, dikeyler = [], []
+        yataylar, dikeyler, sureler = [], [], []
         n = len(f["parcalar"])
         for i, p in enumerate(f["parcalar"]):
             k = {"id": f"{f['id']}p{i + 1:02d}", "ad": "parca", "bas": p["bas"], "son": p["son"],
@@ -484,13 +484,20 @@ def film(is_, src: Path, cikti: Path):
                                  baslik=f.get("baslik") if i == 0 else None)
             yataylar.append(y)
             dikeyler.append(r)
+            sureler.append(round(sure(r), 3))
         for tur, liste_p in (("yatay", yataylar), ("reels", dikeyler)):
             liste = ctx["tmp"] / f"{ad}_{tur}.txt"
             liste.write_text("".join(f"file '{x.resolve()}'\n" for x in liste_p))
             sh(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", liste,
                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", "30", "-pix_fmt", "yuv420p",
                 "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", cikti / f"{ad}_{tur}.mp4"])
-        # birleşik altyazı dosyası (bilgi için)
+        # geçiş noktaları (kontrol için)
+        t, gec = 0.0, []
+        for i, (p, d) in enumerate(zip(f["parcalar"], sureler)):
+            gec.append({"parca": i + 1, "film_bas": round(t, 3), "film_son": round(t + d, 3),
+                        "kaynak_bas": p["bas"], "kaynak_son": p["son"]})
+            t += d
+        (cikti / f"{ad}_gecisler.json").write_text(json.dumps(gec, ensure_ascii=False, indent=1))
         print(f"  -> {ad}: {sure(cikti / f'{ad}_reels.mp4'):.1f} sn", flush=True)
     shutil.rmtree(ctx["tmp"], ignore_errors=True)
 
