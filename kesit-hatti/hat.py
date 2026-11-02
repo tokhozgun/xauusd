@@ -255,6 +255,10 @@ def sessizlige_hizala(src, bas, son):
         if idx:
             yeni_bas = (bas - ara0) + idx[0] * p - 0.02
             yeni_bas = min(yeni_bas, bas - 0.10)
+            # kelimeden önceki 0.22 sn tamamen sessizse daha geniş ön pay bırak (ilk hece geçişe denk gelmesin)
+            i_a, i_b = int((ara0 - 0.22) / p), int((ara0 - 0.04) / p)
+            if 0 <= i_a < i_b <= len(sessiz) and sessiz[i_a:i_b].all():
+                yeni_bas = min(yeni_bas, bas - 0.22)
     # --- bitiş: doğal kuyruk + en sakin kare
     yeni_son = dogal_bitis(src, son)
     return max(0.0, round(yeni_bas, 3)), round(yeni_son, 3)
@@ -478,7 +482,7 @@ def film(is_, src: Path, cikti: Path):
         for i, p in enumerate(f["parcalar"]):
             k = {"id": f"{f['id']}p{i + 1:02d}", "ad": "parca", "bas": p["bas"], "son": p["son"],
                  "kelimeler": is_["kelimeler"], "duzeltmeler": is_.get("duzeltmeler")}
-            giris = 0.15 if i == 0 else 0.12
+            giris = 0.15 if i == 0 else 0.06
             cikis = 0.40 if i == n - 1 else 0.18
             y, r, _ = kesit_uret(is_, k, src, parca_dir, ctx, giris, cikis,
                                  baslik=f.get("baslik") if i == 0 else None)
