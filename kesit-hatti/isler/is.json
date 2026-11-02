@@ -1,5 +1,5 @@
 {
-  "ad": "film-F2-v2",
+  "ad": "film-F1v6-F2v2",
   "mod": "film",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -148,6 +148,44 @@
     }
   ],
   "adimlar": [
+    {
+      "ad": "film-F1-halka-arz-gercekleri-v6",
+      "mod": "film",
+      "filmler": [
+        {
+          "id": "F1",
+          "ad": "halka-arz-gercekleri",
+          "baslik": "Halka Arz Gerçekleri",
+          "parcalar": [
+            {
+              "bas": 86.34,
+              "son": 113.36,
+              "metin": "2010-2014 yıllarında halka arz seferberliği adı altında bir aslında politika başlatıldı. Bu bir ekonomi politikasıydı. 117 şirketin 2010-2014 yılında halka arzı gerçekleşti. ve 17'si iflas etti. Toplamda %76'sı ya endeksin altında ya enflasyonun altında ya da doğrudan bilanço zararı açıkladı."
+            },
+            {
+              "bas": 556.94,
+              "son": 574.54,
+              "metin": "2010-2014'teki az önce açıkladığım halka arz analizini 2024-2025 yıllarında yaptığımızda %45-55 aralığında şirketlerin yine endeksin altında, enflasyonun altında ve bilanço zararı açıklayan çok kötü bir performans ortaya koyuluyor."
+            },
+            {
+              "bas": 727.88,
+              "son": 738.46,
+              "metin": "Bugün 2,5 milyar TL ile 4,5 milyar TL arasında halka arzdan fon elde eden, %90'ını geçmiş borçlarına ve işletme sermayesine ayırıyor."
+            },
+            {
+              "bas": 586.8,
+              "son": 603.74,
+              "metin": "finansal sürdürülebilirlik araştırmamda finansal güvence alanı dediğim diğerlerini çok katlayarak artan bir hisse performansı da iyi bir şey değil."
+            },
+            {
+              "bas": 1220.94,
+              "son": 1241.62,
+              "metin": "Bundan dolayı işte konkordato ve iflastan bir adım öncesinde halka arzı deneyenler var. Orada da halka arzdan elde ettiği fonu ya borca işletme sermayesine ya da bankaya vadeli mevduata yatırıp faiz geliri alanlar var. Bütün bunları yapmalarına rağmen yine de konkordato ve iflas açıklanan şirketler de var."
+            }
+          ]
+        }
+      ]
+    },
     {
       "ad": "film-F2-kural-var-uygulama-yok-v2",
       "mod": "film",
