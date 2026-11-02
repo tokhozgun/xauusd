@@ -1,5 +1,5 @@
 {
-  "ad": "film-F3-v2",
+  "ad": "film-F2-v5",
   "mod": "film",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -149,28 +149,25 @@
   ],
   "adimlar": [
     {
-      "ad": "film-F3-danisman-kimdir-v2",
+      "ad": "film-F2-kural-var-uygulama-yok-v5",
       "mod": "film",
       "filmler": [
         {
-          "id": "F3",
-          "ad": "danisman-kimdir",
-          "baslik": "Danışman Kimdir?",
+          "id": "F2",
+          "ad": "kural-var-uygulama-yok",
+          "baslik": "Kural Var, Uygulama Yok",
           "parcalar": [
             {
-              "bas": 911.88,
-              "son": 943.48,
-              "metin": "Şimdi bakın deneyim kavramı elinizi ateşe sokarak deneyim kazanılır mı? … uzmanlık satın alması … çözüm."
+              "bas": 151.12,
+              "son": 187.94
             },
             {
-              "bas": 212.42,
-              "son": 252.06,
-              "metin": "Aslında piyasada danışman diye … hukuk dediğimiz şey devreye giriyor."
+              "bas": 483.28,
+              "son": 495.4
             },
             {
-              "bas": 823.16,
-              "son": 833.44,
-              "metin": "Sadece bilgi ve tavsiye vermek değil … Aslında çözüm bu."
+              "bas": 518.88,
+              "son": 553.36
             }
           ]
         }
