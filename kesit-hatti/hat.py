@@ -358,74 +358,141 @@ def dikey_parca(src, sb, sd, duzen, hedef, tmp):
         "-r", "30", hedef])
 
 
-def kesit(is_, src: Path, cikti: Path):
+def kesit_hazirlik(is_, src, cikti):
     cikti.mkdir(parents=True, exist_ok=True)
     w, h = boyut(src)
-    kirpma = is_.get("kirpma") or varsayilan_kirpma(w, h)
     ay = is_.get("altyazi", {})
-    font = ay.get("font", "Inter SemiBold")
-    punto = int(ay.get("punto", 52))
-    fontdir = ay.get("fontdir", "")
     tmp = cikti / "_gecici"
     tmp.mkdir(exist_ok=True)
+    return {
+        "kirpma": is_.get("kirpma") or varsayilan_kirpma(w, h),
+        "ay": ay, "font": ay.get("font", "Inter SemiBold"), "punto": int(ay.get("punto", 52)),
+        "fontdir": ay.get("fontdir", ""), "tmp": tmp,
+    }
 
+
+def kelimelerden(k, bas, dur):
+    """Kelime listesi + düzeltme sözlüğünden bu parçanın kelimeleri (parçaya göre zamanlı)."""
+    from duzelt import uygula
+    kel = [tuple(x) for x in json.loads(Path(k["kelimeler"]).read_text(encoding="utf-8"))]
+    if k.get("duzeltmeler"):
+        kel = uygula(kel, json.loads(Path(k["duzeltmeler"]).read_text(encoding="utf-8")))
+    ks, kz = float(k["bas"]), float(k["son"])
+    parca = [w for w in kel if w[0] >= ks - 0.01 and w[1] <= kz + 0.15]
+    if parca:
+        a, z, t = parca[0]
+        parca[0] = (a, z, {"i": "İ", "ı": "I"}.get(t[0], t[0].upper()) + t[1:])
+    return [(a - bas, z - bas, t) for a, z, t in parca if 0 <= a - bas < dur]
+
+
+def kesit_uret(is_, k, src, cikti, ctx, giris=0.15, cikis=0.40, baslik=None):
+    """Tek kesit: yatay + dikey reels (+srt). Dönen: (yatay, reels, sure)."""
+    tmp, ay = ctx["tmp"], ctx["ay"]
+    ad = f"{k['id']}_{k['ad']}"
+    bas, son = float(k["bas"]), float(k["son"])
+    if is_.get("sessizlige_hizala", True):
+        kb, ks = bas, son
+        bas, son = sessizlige_hizala(src, bas, son)
+        print(f"  hizalama: {kb:.2f}->{bas:.2f}  {ks:.2f}->{son:.2f}", flush=True)
+    dur = son - bas
+    print(f"\n=== {ad}: {bas:.1f}–{son:.1f} ({dur:.0f} sn)", flush=True)
+
+    # başlık (ilk 3 sn, üstte beyaz kutu)
+    bfont = "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf"
+    def baslik_vf(yuk):
+        if not baslik:
+            return ""
+        metin = baslik.replace("'", "\u2019").replace(":", "\\:")
+        return (f",drawtext=fontfile={bfont}:text='{metin}':fontsize={int(yuk * 0.032)}:fontcolor=black:"
+                f"box=1:boxcolor=white@0.92:boxborderw={int(yuk * 0.014)}:x=(w-text_w)/2:y={int(yuk * 0.04)}:"
+                f"enable='between(t,0,3.2)'")
+
+    # 1) yatay
+    yatay = cikti / f"{ad}_yatay.mp4"
+    af = ("loudnorm=I=-14:TP=-1.5:LRA=11,"
+          f"afade=t=in:st=0:d={max(giris, 0.06):.2f},afade=t=out:st={max(0, dur - cikis):.3f}:d={cikis:.2f}")
+    vf = f"fade=t=in:st=0:d={giris:.2f},fade=t=out:st={max(0, dur - cikis):.3f}:d={cikis:.2f}" + baslik_vf(1080)
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{bas:.3f}", "-i", src, "-t", f"{dur:.3f}",
+        "-vf", vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2", "-af", af,
+        "-movflags", "+faststart", yatay])
+
+    # 2) altyazı
+    if k.get("kelimeler"):
+        kel = kelimelerden(k, bas, dur)
+    elif k.get("srt") or ay.get("srt"):
+        kel = srt_oku(Path(k.get("srt") or ay["srt"]), ofset=bas if ay.get("srt_mutlak", True) else 0)
+        kel = [x for x in kel if 0 <= x[0] < dur]
+    else:
+        wav = tmp / f"{ad}.wav"
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-i", yatay, "-vn", "-ac", "1", "-ar", "16000", wav])
+        kel = kelimeler_whisper(wav, ay.get("model", "small"), ay.get("dil", "tr"))
+    bloklar = parcala(kel)
+    srt_yaz(bloklar, cikti / f"{ad}.srt")
+    ass = tmp / f"{ad}.ass"
+    ass_yaz(bloklar, ass, ctx["font"], ctx["punto"])
+
+    # 3) dikey reels
+    ass_arg = f"ass='{ass}'" + (f":fontsdir='{ctx['fontdir']}'" if ctx["fontdir"] else "")
+    duzenler = is_.get("duzenler") or {"bolunmus": ctx["kirpma"]}
+    sahneler = sahne_parcalari(is_.get("sahneler", []), bas, son)
+    parcalar = []
+    for i, (sb, sz, dz) in enumerate(sahneler):
+        parca = tmp / f"{ad}_p{i:02d}.mp4"
+        dikey_parca(src, sb, sz - sb, duzenler[dz], parca, tmp)
+        parcalar.append(parca)
+    liste = tmp / f"{ad}_liste.txt"
+    liste.write_text("".join(f"file '{p.resolve()}'\n" for p in parcalar))
+    birlesik = tmp / f"{ad}_dikey.mp4"
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", liste, "-c", "copy", birlesik])
+    reels = cikti / f"{ad}_reels.mp4"
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-i", birlesik, "-i", yatay,
+        "-filter_complex",
+        f"[0:v]{ass_arg},fade=t=in:st=0:d={giris:.2f},fade=t=out:st={max(0, dur - cikis):.3f}:d={cikis:.2f}"
+        + baslik_vf(1920) + "[v]",
+        "-map", "[v]", "-map", "1:a?",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", "30", "-c:a", "copy",
+        "-movflags", "+faststart", "-t", f"{dur:.3f}", reels])
+    return yatay, reels, dur
+
+
+def kesit(is_, src: Path, cikti: Path):
+    ctx = kesit_hazirlik(is_, src, cikti)
     for k in is_["kesitler"]:
-        ad = f"{k['id']}_{k['ad']}"
-        bas, son = float(k["bas"]), float(k["son"])
-        if is_.get("sessizlige_hizala", True):
-            kb, ks = bas, son
-            bas, son = sessizlige_hizala(src, bas, son)
-            print(f"  hizalama: {kb:.2f}->{bas:.2f}  {ks:.2f}->{son:.2f}", flush=True)
-        dur = son - bas
-        print(f"\n=== {ad}: {bas:.1f}–{son:.1f} ({dur:.0f} sn)", flush=True)
+        _, reels, dur = kesit_uret(is_, k, src, cikti, ctx)
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", min(5, dur / 2), "-i", reels,
+            "-frames:v", "1", "-vf", "scale=540:-2", cikti / f"{k['id']}_{k['ad']}_onizleme.jpg"])
+    shutil.rmtree(ctx["tmp"], ignore_errors=True)
 
-        # 1) yatay kesit (yumuşak ses giriş/çıkışı)
-        yatay = cikti / f"{ad}_yatay.mp4"
-        af = ("loudnorm=I=-14:TP=-1.5:LRA=11,"
-              f"afade=t=in:st=0:d=0.10,afade=t=out:st={max(0, dur - 0.40):.3f}:d=0.40")
-        vf = f"fade=t=in:st=0:d=0.15,fade=t=out:st={max(0, dur - 0.40):.3f}:d=0.40"
-        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{bas:.3f}", "-i", src, "-t", f"{dur:.3f}",
-            "-vf", vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
-            "-c:a", "aac", "-b:a", "160k", "-af", af,
-            "-movflags", "+faststart", yatay])
 
-        # 2) altyazı
-        if k.get("srt") or ay.get("srt"):
-            kel = srt_oku(Path(k.get("srt") or ay["srt"]), ofset=bas if ay.get("srt_mutlak", True) else 0)
-            kel = [x for x in kel if 0 <= x[0] < dur]
-        else:
-            wav = tmp / f"{ad}.wav"
-            sh(["ffmpeg", "-y", "-loglevel", "error", "-i", yatay, "-vn", "-ac", "1", "-ar", "16000", wav])
-            kel = kelimeler_whisper(wav, ay.get("model", "small"), ay.get("dil", "tr"))
-        bloklar = parcala(kel)
-        srt_yaz(bloklar, cikti / f"{ad}.srt")
-        ass = tmp / f"{ad}.ass"
-        ass_yaz(bloklar, ass, font, punto)
-
-        # 3) dikey reels: sahne sahne üst konuk + beyaz bant + alt sunucu, sonra altyazı
-        ass_arg = f"ass='{ass}'" + (f":fontsdir='{fontdir}'" if fontdir else "")
-        duzenler = is_.get("duzenler") or {"bolunmus": kirpma}
-        sahneler = sahne_parcalari(is_.get("sahneler", []), bas, son)
-        parcalar = []
-        for i, (sb, sz, dz) in enumerate(sahneler):
-            parca = tmp / f"{ad}_p{i:02d}.mp4"
-            dikey_parca(src, sb, sz - sb, duzenler[dz], parca, tmp)
-            parcalar.append(parca)
-        liste = tmp / f"{ad}_liste.txt"
-        liste.write_text("".join(f"file '{p.resolve()}'\n" for p in parcalar))
-        birlesik = tmp / f"{ad}_dikey.mp4"
-        sh(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", liste, "-c", "copy", birlesik])
-        sh(["ffmpeg", "-y", "-loglevel", "error", "-i", birlesik, "-i", yatay,
-            "-filter_complex", f"[0:v]{ass_arg},fade=t=in:st=0:d=0.15,fade=t=out:st={max(0, dur - 0.40):.3f}:d=0.40[v]",
-            "-map", "[v]", "-map", "1:a?",
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "copy",
-            "-movflags", "+faststart", "-t", dur, cikti / f"{ad}_reels.mp4"])
-
-        # 4) önizleme karesi
-        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", min(5, dur / 2), "-i", cikti / f"{ad}_reels.mp4",
-            "-frames:v", "1", "-vf", "scale=540:-2", cikti / f"{ad}_onizleme.jpg"])
-
-    shutil.rmtree(tmp, ignore_errors=True)
+def film(is_, src: Path, cikti: Path):
+    """Konu filmi: birden çok parçayı kesip tek kısa filmde birleştirir (yatay + dikey)."""
+    ctx = kesit_hazirlik(is_, src, cikti)
+    parca_dir = ctx["tmp"] / "parcalar"
+    parca_dir.mkdir(exist_ok=True)
+    for f in is_["filmler"]:
+        ad = f"{f['id']}_{f['ad']}"
+        print(f"\n##### FİLM {ad}: {len(f['parcalar'])} parça", flush=True)
+        yataylar, dikeyler = [], []
+        n = len(f["parcalar"])
+        for i, p in enumerate(f["parcalar"]):
+            k = {"id": f"{f['id']}p{i + 1:02d}", "ad": "parca", "bas": p["bas"], "son": p["son"],
+                 "kelimeler": is_["kelimeler"], "duzeltmeler": is_.get("duzeltmeler")}
+            giris = 0.15 if i == 0 else 0.12
+            cikis = 0.40 if i == n - 1 else 0.18
+            y, r, _ = kesit_uret(is_, k, src, parca_dir, ctx, giris, cikis,
+                                 baslik=f.get("baslik") if i == 0 else None)
+            yataylar.append(y)
+            dikeyler.append(r)
+        for tur, liste_p in (("yatay", yataylar), ("reels", dikeyler)):
+            liste = ctx["tmp"] / f"{ad}_{tur}.txt"
+            liste.write_text("".join(f"file '{x.resolve()}'\n" for x in liste_p))
+            sh(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", liste,
+                "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", "30", "-pix_fmt", "yuv420p",
+                "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", cikti / f"{ad}_{tur}.mp4"])
+        # birleşik altyazı dosyası (bilgi için)
+        print(f"  -> {ad}: {sure(cikti / f'{ad}_reels.mp4'):.1f} sn", flush=True)
+    shutil.rmtree(ctx["tmp"], ignore_errors=True)
 
 
 def sahne(is_, src: Path, cikti: Path):
@@ -519,6 +586,8 @@ def calistir(is_, src, cikti):
         transkript(is_, src, cikti)
     elif mod == "sahne":
         sahne(is_, src, cikti)
+    elif mod == "film":
+        film(is_, src, cikti)
     else:
         kesit(is_, src, cikti)
 
