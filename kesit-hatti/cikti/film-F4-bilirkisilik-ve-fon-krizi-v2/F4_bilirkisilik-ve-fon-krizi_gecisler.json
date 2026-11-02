@@ -1,0 +1,23 @@
+[
+ {
+  "parca": 1,
+  "film_bas": 0.0,
+  "film_son": 17.25,
+  "kaynak_bas": 1100.66,
+  "kaynak_son": 1117.36
+ },
+ {
+  "parca": 2,
+  "film_bas": 17.25,
+  "film_son": 64.26,
+  "kaynak_bas": 382.44,
+  "kaynak_son": 429.12
+ },
+ {
+  "parca": 3,
+  "film_bas": 64.26,
+  "film_son": 76.51,
+  "kaynak_bas": 1117.56,
+  "kaynak_son": 1129.4
+ }
+]
