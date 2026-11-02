@@ -1,5 +1,5 @@
 {
-  "ad": "film-F1-v2",
+  "ad": "film-F1-v3",
   "mod": "film",
   "kaynak": {
     "youtube": "https://www.youtube.com/watch?v=LY471VNGsE8",
@@ -149,7 +149,7 @@
   ],
   "adimlar": [
     {
-      "ad": "film-F1-halka-arz-gercekleri-v2",
+      "ad": "film-F1-halka-arz-gercekleri-v3",
       "mod": "film",
       "filmler": [
         {
@@ -173,9 +173,9 @@
               "metin": "Bugün 2,5 milyar TL ile 4,5 milyar TL arasında halka arzdan fon elde eden, %90'ını geçmiş borçlarına ve işletme sermayesine ayırıyor."
             },
             {
-              "bas": 591.8,
+              "bas": 588.82,
               "son": 603.74,
-              "metin": "finansal sürdürülebilirlik araştırmamda finansal güvence alanı dediğim diğerlerini çok katlayarak artan bir hisse performansı da iyi bir şey değil."
+              "metin": "Getiri sunmuş olabilir ama biliyorsunuz finansal sürdürülebilirlik araştırmamda finansal güvence alanı dediğim diğerlerini çok katlayarak artan bir hisse performansı da iyi bir şey değil."
             },
             {
               "bas": 1222.14,
